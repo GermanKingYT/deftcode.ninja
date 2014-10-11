@@ -1,0 +1,31 @@
+# DEFTCODE YML Settings
+
+port: 80
+
+title: DEFTCODE
+email: eurialo@deftcode.ninja
+description: security.. coding / beer / coffee
+baseurl: ""
+url: "http://deftcode.ninja"
+
+google_username: federicofazzi
+google_url: "https://plus.google.com/110438956640429796386"
+
+twitter_username: federicofazzi
+twitter_url: "https://twitter.com/federicofazzi"
+
+github_username:  eurialo
+github_url: "https://github.com/eurialo"
+
+linkedin_username:  eurialo
+linkedin_url: "https://linkedin.com/in/eurialo"
+
+markdown: kramdown
+
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
+
+permalink: /post/:title/
+
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'LICENSE']

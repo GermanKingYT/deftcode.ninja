@@ -1,0 +1,28 @@
+<header>
+	<h1>{{ site.title }}<sup>( 2 )</sup></h1>
+
+	<ul id="navbar">
+		<li><a href="{{ site.url }}" title="Posts">Posts</a></li>
+		<li><a href="{{ site.url }}/security" title="Security">Security</a></li>
+		<li><a href="{{ site.url }}/about" title="About">About</a></li>
+	</ul>
+
+	<ul id="social" class="apicos-social-sport">
+		{% if site.github_username %}
+		<li><a href="{{ site.github_url }}" title="Github"><span class="apico apico-github-square"></span></a></li>
+		{% endif %}
+		{% if site.google_username %}
+		<li><a href="{{ site.google_url }}" title="Google+"><span class="apico apico-google-plus-square"></span></a></li>
+		{% endif %}
+		{% if site.twitter_username %}
+		<li><a href="{{ site.twitter_url }}" title="Twitter"><span class="apico apico-twitter-square"></span></a></li>
+		{% endif %}
+		{% if site.linkedin_username %}
+		<li><a href="{{ site.linkedin_url }}" title="Linkedin"><span class="apico apico-linkedin-square"></span></a></li>
+		{% endif %}
+		<li><a href="/feed.xml" title="Feed RSS" target="_blank"><span class="apico apico-rss-square"></span></a></li>
+	</ul>
+	<p>
+		<small><a href="https://pgp.mit.edu/pks/lookup?search=0x6D378CAF&op=index&exact=on" title="MIT PGP Public Key Server - 0x6D378CAF" target="_blank">GPG - 2048R/6D378CAF</a></small>
+	</p>
+</header>

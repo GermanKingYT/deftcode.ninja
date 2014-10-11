@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<h1 id="latest-post">~ Latest post</h1>
+
+
+<h1 class="post-title"><a href="{{ site.posts[0].url | prepend: site.url }}" title="{{ site.posts[0].title }}">{{ site.posts[0].title }}</a></h1>
+<p class="post-meta">RELEASED IN {{ site.posts[0].date | date: "%A %-d, %B, %Y" | upcase }}{% if site.posts[0].author %} • {{ site.posts[0].author }}{% endif %}{% if site.posts[0].meta %} • {{ site.posts[0].meta }}{% endif %}</p>
+
+{% if site.posts[0].content contains "r34dm0r3" %}
+	{{ site.posts[0].content | split:"r34dm0r3" | first }}
+{% else %}
+	{{ site.posts[0].content }}
+{% endif %}
+
+-->
+<br>
+<span id="sources-list">
+	<a href="{{ site.posts[0].url | prepend: site.url }}" title="Read more">READ MORE</a>
+</span>
+
+<hr>
+
+<h1>Posts Archive</h1>
+
+<ul class="post-list">
+	{% for post in site.posts %}
+		{% capture currentyear %}{{ post.date | date: "%Y" }}{% endcapture %}
+
+		{% if currentyear != year %}
+			{% if currentyear == '2006' %}
+				<li><h2>&mdash;&nbsp;&nbsp; {{ currentyear }}</h2></li>
+			{% else %}
+				<li><h2>&mdash;&nbsp;&nbsp; {{ currentyear }}</h2></li>
+			{% endif %}
+			{% capture year %}{{currentyear}}{% endcapture %}
+		{% endif %}
+		<li>
+			<a class="post-link" href="{{ post.url | prepend: site.url }}" title="{{ post.title }}">
+				<h2><span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span> – {{ post.title }}</h2>
+			</a>
+			<small>CATEGORY: {{ post.categories[0] | upcase }}</small>
+		</li>
+	{% endfor %}
+</ul>

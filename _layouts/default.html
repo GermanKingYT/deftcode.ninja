@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+	<button id="toggle" class="standard-width" type="button" data-toggle="collapse">
+		<span class="toggle-line"></span>
+		<span class="toggle-line"></span>
+		<span class="toggle-line"></span>
+	</button>
+	<div class="wrapper">
+		{% include header.html %}
+		<section>
+		{{ content }}
+		</section>
+		{% include footer.html %}
+	</div>
+</body>
+</html>
