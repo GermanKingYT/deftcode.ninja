@@ -8,7 +8,7 @@ permalink: about/
 
 <p id="about-description">
 <strong>Linux, Security and Bitcoin enthusiast</strong>, in free time <code>hacktivist</code> and <code>security researcher</code>, in this blog I'll publish my findings and more about <code>coding</code>!
-If you need to <code>contact me</code>, mail me directly at <a href="mailto:federico.fazzi@gmail.com" target="_blank">eurialo@hidden</a> (please use <strong>GPG Key</strong> for a private <strong>Encrypted</strong> message) or social network.
+If you need to <code>contact me</code>, mail me directly at <a href="mailto:eurialo@deftcode.ninja" target="_blank">eurialo@hidden</a> (please use <strong>GPG Key</strong> for a private <strong>Encrypted</strong> message) or social network.
 </p>
 
 ## Deftcode<sup>(2)</sup>
