@@ -26,5 +26,5 @@ usage: python rapidtor.py
 
 <span id="sources-list">
 [View on GitHub](https://github.com/eurialo/rapidtor/ "GitHub RapidTor")
-[Direct Download](https://raw.githubusercontent.com/eurialo/rapidtor/master/rapidtor.c "Download RapidTor")
+[Direct Download](https://raw.githubusercontent.com/eurialo/rapidtor/master/rapidtor.py "Download RapidTor")
 </span>
