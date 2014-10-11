@@ -8,7 +8,7 @@ permalink: post/non-alphanumeric-javascript-coding/
 
 This is a quick reference to generate a fully non-alphanumeric javascript code! 
 
-## ~1 Base knowledge
+## #1 Base knowledge
 
 ### Generating numbers
 
@@ -30,7 +30,7 @@ This is a quick reference to generate a fully non-alphanumeric javascript c
   NaN                | `[![]]`           | `[![]]+[]`                 | `[![]]+''`
   undefined          | `[]['']`          | `[]['']+[]`                | `[]['']+''`
 
-## ~2 Generate a simple non-alphanumeric string
+## #2 Generate a simple non-alphanumeric string
 
 ### How to generate a simple "alert" string
 
@@ -50,7 +50,7 @@ _ = ([![]]+[]) [+!+[]] + ([![]]+[]) [!+[]+!+[]] + ([![]]+[]) [!+[]+!+[]+!+[]+!+[
 
 <!--r34dm0r3-->
 
-## ~3 Types of execution methods
+## #3 Types of execution methods
 
 ### How to execute "alert(1)" through root Object, Pointer or other possible methods
 
@@ -150,7 +150,7 @@ Generating `"[].constructor.constructor("alert(0)")();"`<br>
 }());
 {% endhighlight %}
 
-## ~4 Encoded possible characters list
+## #4 Encoded possible characters list
 
 If you find a method to retrieve the unknowns, please mail me to update the document.
 
@@ -183,7 +183,7 @@ If you find a method to retrieve the unknowns, please mail me to update the docu
   unknown              | 'y'           | `unknown`
   unknown              | 'z'           | `unknown`
 
-## ~5 References
+## #5 References
 
 * [http://www.w3schools.com/jsref/][w3c]
 * [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference][mozilla]
