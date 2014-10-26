@@ -91,3 +91,126 @@ img#about-me {
 	margin-top: 45px;
 }
 
+/* CV */
+
+#cv {
+	h2, h3 { border-bottom: 0; margin: 10px 0 0; }
+
+	.explain {
+		font: 400 14px "Helvetica Neue", Helvetica, Arial;
+		color: #444;
+		line-height: 1.5;
+		width: 175px;
+		text-align: justify;
+	}
+
+	.position {
+		font-size: 12px;
+		height: 22px;
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goPABMPB2ODCwAAAjpJREFUOMu1lb9rk0EYx7/P/XjzSl5M8tKE4HQUKViH0EHcpaCLiwSk0GJCh3bWQSfdHARdQsngkNGIFNxCIEtx0b/AF2lKyOaQOJhI+97xnkvfkNSkTX9403F3z+e+z6874H+OTCZz5SyKF3zfh+d5sNZeCEhEGAwG6Pf7AAARbwgh+Obm5suDg4P7jDEQ0VxAay2iKMLi4mJzZ2fn1YgXT7TWtlarpTzPuyulBBGdCY+9C8MQe3t7X7XW+AcMwAohIKUEY2xu9wHAcRwIISb22MmD4yqttXPH/Nju1lTF4yqklHp7e/ud4zh/Go3GoyAIbhtjxDRvxsR0p4FHI4oiKKW+lEqlF9Zasba2Vm2320+2trae9Xq9POd8lvDDqaEYLTKGIAjuLS8vv11aWrqRz+dvFgqFQavVKiqlvhtjZoGjUxUDAOccrus+dV13I5lMSmNMWin1vNPpPCwWi639/X11MmFxOGcqPpHMLOc87bouUqnUa9/371Sr1Q3P836fZsvm7SxrLaSUfGFh4cP6+vqPlZWV91EUXR4cJ7VcLn9uNpu/KpXKG8dxDq8EzBhDvV53iUgT0c9cLvdpVp2zWW16CvyBUqqYzWbT3W63SERTbcR5oHG1+L5fT6fTQ875tVm2E4qNMQjD8MxWJiLOOb8enwvDEMe1TVMVr66uBlrrbxd5NqWUwe7urgCgJ25IJpNIJBKQUl7oodda4+joCMPhcPIHsdY+BmAu+TMJIvp4rqSdp5EA4C8kwtyR84l8awAAAABJRU5ErkJggg==) no-repeat 0px 0px;
+		display: inline-block;
+		padding-left: 30px;
+		padding-top: 2px;
+		margin-bottom: 4px;
+	}
+
+	.phone {
+		font-size: 12px;
+		height: 22px;
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goPABMPB2ODCwAAAjpJREFUOMu1lb9rk0EYx7/P/XjzSl5M8tKE4HQUKViH0EHcpaCLiwSk0GJCh3bWQSfdHARdQsngkNGIFNxCIEtx0b/AF2lKyOaQOJhI+97xnkvfkNSkTX9403F3z+e+z6874H+OTCZz5SyKF3zfh+d5sNZeCEhEGAwG6Pf7AAARbwgh+Obm5suDg4P7jDEQ0VxAay2iKMLi4mJzZ2fn1YgXT7TWtlarpTzPuyulBBGdCY+9C8MQe3t7X7XW+AcMwAohIKUEY2xu9wHAcRwIISb22MmD4yqttXPH/Nju1lTF4yqklHp7e/ud4zh/Go3GoyAIbhtjxDRvxsR0p4FHI4oiKKW+lEqlF9Zasba2Vm2320+2trae9Xq9POd8lvDDqaEYLTKGIAjuLS8vv11aWrqRz+dvFgqFQavVKiqlvhtjZoGjUxUDAOccrus+dV13I5lMSmNMWin1vNPpPCwWi639/X11MmFxOGcqPpHMLOc87bouUqnUa9/371Sr1Q3P836fZsvm7SxrLaSUfGFh4cP6+vqPlZWV91EUXR4cJ7VcLn9uNpu/KpXKG8dxDq8EzBhDvV53iUgT0c9cLvdpVp2zWW16CvyBUqqYzWbT3W63SERTbcR5oHG1+L5fT6fTQ875tVm2E4qNMQjD8MxWJiLOOb8enwvDEMe1TVMVr66uBlrrbxd5NqWUwe7urgCgJ25IJpNIJBKQUl7oodda4+joCMPhcPIHsdY+BmAu+TMJIvp4rqSdp5EA4C8kwtyR84l8awAAAABJRU5ErkJggg==) no-repeat 0px 0px;
+		display: inline-block;
+		padding-left: 30px;
+		padding-top: 2px;
+		margin-bottom: 4px;
+	}
+
+	.mail {
+		font-size: 12px;
+		height: 22px;
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goPABM7Jtd3vgAAAu9JREFUOMvtVM9LG0EY/WZnd2bcjaxiRD2UKh5KMUWKFK0lKSmC4MWeihiUtGB7qcUSKqIoRoo9NFIrPUiRFgWx/gXBgrQ3wVyKtxwEezKKmIiN+3unl8YmxnjoD3rpg4EZhu/N43tvPoD/+NtA+QdFUQRFUSTGGGCMAWNcuhAhcF0XXNcF0zRB0zT78PDQyd0LpxtBIF1dXfe9Xq+OENIJITohRKeU6oyxopW7E0VRZ4zpHR0dz1VVpUWKa2pqai3L+phKpaLt7e3vbdsuv0hxDo7jOKurqyOBQOAB5/zO/v5+qkAxIQRUVb3W0NAQGRwcHCeEHDmOU5KQcw6CIFjhcPh1Z2fnPVmWrxJCoKgVoigCpRS8Xu/NaDTas7a29lCW5W+u655LLAgCX1hYGJ+fn7+tquoNSilIkgTn9RhEUQRRFEFV1Tafz/dkaGhohFKaySfnnIMkScbAwECsu7v7LmOsJVcnCEIxMUIoXw1UV1ffGh0d7ZudnR1mjBUon5iYeDk3N9daWVnZlu9DAcfZCOWAMYby8vLWYDCYiEajEYxxxrZtIxKJvAiHw4sY40C+wvzaglQ0NjbWlpWV7VJKASEEx8fHMDY2NjkzM9OiaZodi8Xiuq5fmpqaug4A9vDw8Jfp6elJj8cDnHMwDAM0Tavb3t5OFREzxnYZY2CaJvT19X1YWVnZ5Zw/RQjByclJzHVd7vF4nv0oedXb21u3tLTUQwgBXddB1/Vi4vr6+lpK6a4gCBAKhd6sr69XptPpUKksO44DVVVVb4PBoLm8vPzYdV0wDKNuZ2fnZ44rKirAsizIZrPg8/k2EonEwdHRUeiiD4IxhnQ6/TCRSBw0NTVtZLNZsCyr0LxMJgOSJDG/3/9JluXNZDI5edaMUkgmk5OKomz6/f7PsizzIvP29vbK+vv7321tbfUQQk4HUKkHOOenLTFNE5qbmxfj8fgjhJBRNN0455cB4AoA8F+YkkmE0NeSCn4Hf4Lj3+E7h6cudmRkjvcAAAAASUVORK5CYII=) no-repeat 0px 0px;
+		display: inline-block;
+		padding-left: 30px;
+		padding-top: 2px;
+		margin-bottom: 4px;
+	}
+
+	.web {
+		font-size: 12px;
+		height: 22px;
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goPABQSKyR5FQAAA6dJREFUOMvVlE1MK1UUx/93Op3pTFs+Js2UFigV0liSpihKJAQXLgQ2gGEhC32GBLpggYIxJK9blhCJ4RlcCYIsTNyYt9LFc/PURfui5oUEoz7CV2lraVO0M22nM9eFDJlSiOt3VzfnnPu7/3PPPQd43ha5zejz+XB+fg4AJBAIuOx2u0AIYQCAUmpomqYeHx//A4C2t7fj7Ozs/8EmtLW1VZYkaY3n+WGGYV6wxhiGcahp2uNcLvdRoVDI+v1+pFKpu8EdHR04PT1FW1vbiNPp/NblclGWZW/NyjAMlEolFIvF0Uwm853X60Umk7n228yNmZLP5xsJhUKfzs7Ofh6NRn/Y398foJTadF2HrusAAE3TAACRSOQPVVXfA/BzNpv9U5ZllEqlRsXNzc2y3+/PuN3ubxRFOSCELHIcx1NKMTY29mhycvJga2vr5eHh4Wf9/f2/B4PBr1dWVt7Z3d29ryiKN5/PZ297ChIKhb5wu933CKnP3m63q4uLi0PT09O/AOgC8BchRLkqpnNoaOjp4eHhj5eXl/cURaEAwJiHu7q6XBzHDd+EVqtVxOPx1ampqd8IISCEHJlQACCElGKx2H0AbzY1NbkaFPf09MiCIGR4nq8rkCiKf1cqlbeSyeQjAJAkCfl8vu5ySinT3d2tq6rqTafT2TrFhBDmplpRFKvLy8vLiUTiJ9OWz+fhdDpfk2U5Lsvyq1dnDcMwSizLXvMYy62glNaBJUl6PDEx8RkhRJ2Zmbm27+zslAYHB6e8Xm8iEom83tvb+1QURVEQhOsY1qKO2my2OnAqlWoJhUIvSpKU297evjDte3t7bx8dHb3CcRwAfAXAp+s6OI6jDYqDwWCF5/mLG33Q73a7Dzwez7nf7w+axlwuN2ER4QMAnucvOjs7Kw3g1dXVkiAIT24+B8MwcDgc9mq1+hIARKPRvmKx2GetB6UUDofjydraWqkBHA6HtXg8/qBSqTS0r81mw/j4OAMAqqqOsyxb5y+Xy4jH4w/C4bDWAAaAkZGRh3Nzc+tm61pVJ5PJWY/Hwzudzvetvlqthlgstj46Ovrw1iFEKQUhBJRSdmNj4+PNzc0FQRBgSZkC0ABwZryqqpifn99YWFj4kBBSMxl3zmNKqZhIJN5dX1//4OTkpKNQKDTVarX/vhHLoqWl5TIQCJwuLS19MjAw8KW1E++cxxblTLlc9qbT6Td0Xe+jlIpXzaAwDPOrz+f73uFwZAghhlXp87v+BVnkejcM3Ma/AAAAAElFTkSuQmCC) no-repeat 0px 0px;
+		display: inline-block;
+		padding-left: 30px;
+		padding-top: 2px;
+		margin-bottom: 4px;
+	}
+
+	.what-container {
+		margin-bottom: 20px;
+	}
+	.what-date {
+		float: left;
+		text-align: center;
+	}
+	.what-box {
+		padding-left: 95px;
+		width: 500px;
+	}
+	.what {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.what-where {
+		font-weight: bold;
+		font-size: 12px;
+		margin-bottom: 5px
+	}
+	.what-description {
+
+	}
+
+
+	.language-container {
+		width: 460px;
+		height: 25px;
+		margin-bottom: 15px;
+	}
+	.language-label {
+		width: 100px;
+		height: 25px;
+		float: left;
+	}
+	.square-nil {
+		width: 10px;
+		height: 10px;
+		background: transparent;
+		margin-right: 5px;
+		float: left;
+		margin-top: 5px;
+	}
+	.square {
+		width: 10px;
+		height: 10px;
+		background: #333;
+		margin-right: 5px;
+		float: left;
+		margin-top: 5px;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+	}
+	.square-light {
+		width: 10px;
+		height: 10px;
+		background: #999;
+		margin-right: 5px;
+		float: left;
+		margin-top: 5px;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+	}
+	.boxed {
+		width: 600px;
+		margin-bottom: 20px;
+	}
+}

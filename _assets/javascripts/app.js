@@ -76,8 +76,21 @@
 	// Enable toggle
 	exports.Toggle = function() {
 
-		exports.t = _d.getElementById("toggle");
-		AddCrossEvent(exports.t, "click", _ManageToggle);
+		if (_d.getElementById("toggle")) {
+			exports.t = _d.getElementById("toggle");
+
+			if (!/curriculum-vita/g.test(window.location.pathname)) {
+				AddCrossEvent(exports.t, "click", _ManageToggle);
+			}
+			else {
+				AddCrossEvent(exports.t, "click", function() {
+					_d.location.replace(_d.location.origin);
+				});
+			}
+		}
+		else {
+
+		}
 
 	};
 
