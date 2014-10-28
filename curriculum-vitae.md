@@ -6,14 +6,14 @@ permalink: curriculum-vitae/
 <div id="experience" class="left-icon">
 	<div>Experience</div>
 </div>
-<div class="explain">
+<div class="explain-alt">
 	<div class="what-container">
 		<div class="what-date">
 			February<br>2013
 		</div>
 		<div class="what-box">
 			<div class="what">
-				Analyst And Software Developer
+				<span class="progress">IN PROGRESS</span> Analyst And Software Developer
 			</div>
 			<div class="what-where">
 				Mentefredda S.r.l. – mentefredda.it
@@ -30,7 +30,7 @@ permalink: curriculum-vitae/
 		</div>
 		<div class="what-box">
 			<div class="what">
-				Developer
+				<span class="progress">IN PROGRESS</span> Developer
 			</div>
 			<div class="what-where">
 				ProssimaIsola S.r.l. – prossimaisola.com
@@ -79,7 +79,7 @@ permalink: curriculum-vitae/
 <div id="awards" class="left-icon">
 	<div>Awards</div>
 </div>
-<div class="explain">
+<div class="explain-alt">
 	<div class="what-container">
 		<div class="what-date">
 			October<br>2014
@@ -117,7 +117,7 @@ permalink: curriculum-vitae/
 <div id="education" class="left-icon">
 	<div class="what">Education</div>
 </div>
-<div class="explain">
+<div class="explain-alt">
 	<div class="what-container">
 		<div class="what-date">
 			June 2010
@@ -130,7 +130,7 @@ permalink: curriculum-vitae/
 				Kennedy Institute
 			</div>
 			<div class="what-description">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				
 			</div>
 		</div>
 	</div>
@@ -139,7 +139,7 @@ permalink: curriculum-vitae/
 <div id="language" class="left-icon">
 	<div>Languages</div>
 </div>
-<div class="explain">
+<div class="explain-alt">
 	<div class="language-container">
 		<div class="language-label">ITALIAN</div> 
 		<div class="square"></div> 

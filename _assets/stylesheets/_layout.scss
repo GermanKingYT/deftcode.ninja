@@ -13,9 +13,11 @@
 		display: block;
 		width: 22px;
 		height: 3px;
-		border-radius: 2px;
 		margin-bottom: 4px;
 		background: #222;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
 	}
 }
 
@@ -104,6 +106,13 @@ img#about-me {
 		text-align: justify;
 	}
 
+	.explain-alt {
+		font: 400 14px "Helvetica Neue", Helvetica, Arial;
+		color: #444;
+		line-height: 1.5;
+		text-align: justify;
+	}
+
 	.position {
 		font-size: 12px;
 		height: 22px;
@@ -153,7 +162,6 @@ img#about-me {
 	}
 	.what-box {
 		padding-left: 95px;
-		width: 500px;
 	}
 	.what {
 		text-transform: uppercase;
@@ -170,7 +178,6 @@ img#about-me {
 
 
 	.language-container {
-		width: 460px;
 		height: 25px;
 		margin-bottom: 15px;
 	}
@@ -212,5 +219,16 @@ img#about-me {
 	.boxed {
 		width: 600px;
 		margin-bottom: 20px;
+	}
+
+	.progress {
+		background: #333;
+		color: #eee;
+		padding: 2px 3px 1px 3px;
+		font-size: 12px;
+		margin-right: 10px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
 	}
 }
