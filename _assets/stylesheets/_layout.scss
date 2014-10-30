@@ -231,4 +231,24 @@ img#about-me {
 		-moz-border-radius: 2px;
 		border-radius: 2px;
 	}
+
+	.tooltip-box:hover .tooltip-info {
+		display: block;
+	}
+
+	.tooltip-info {
+		display: none;
+		background: #333;
+		color: #eee;
+		margin-left: 28px;
+		padding: 3px 5px 3px 5px;
+		position: absolute;
+		z-index: 1000;
+		font-size: 12px;
+		font-weight: bold;
+		cursor: pointer;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
 }

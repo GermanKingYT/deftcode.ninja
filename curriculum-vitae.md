@@ -142,55 +142,83 @@ permalink: curriculum-vitae/
 <div class="explain-alt">
 	<div class="language-container">
 		<div class="language-label">ITALIAN</div> 
-		<div class="square"></div> 
-		<div class="square"></div> 
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square-nil"></div>
-		<div class="square"></div> 
-		<div class="square"></div> 
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square-nil"></div>
-		<div class="square"></div> 
-		<div class="square"></div> 
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square-nil"></div>
-		<div class="square"></div> 
-		<div class="square"></div> 
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square-nil"></div>
+		<div class="tooltip-box">
+			<span class="tooltip-info">Speaking</span>
+			<div class="square"></div> 
+			<div class="square"></div> 
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square-nil"></div>
+		</div>
+
+		<div class="tooltip-box">
+			<span class="tooltip-info">Writing</span>
+			<div class="square"></div> 
+			<div class="square"></div> 
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square-nil"></div>
+		</div>
+
+		<div class="tooltip-box">
+			<span class="tooltip-info">Speaking</span>
+			<div class="square"></div> 
+			<div class="square"></div> 
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square-nil"></div>
+		</div>
+
+		<div class="tooltip-box">
+			<span class="tooltip-info">Writing</span>
+			<div class="square"></div> 
+			<div class="square"></div> 
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square-nil"></div>
+		</div>
 	</div>
 	<div class="language-container">
 		<div class="language-label">ENGLISH</div> <div class="square"></div> 
-		<div class="square"></div> 
-		<div class="square"></div> 
-		<div class="square-light"></div>
-		<div class="square-light"></div>
-		<div class="square-nil"></div>
-		<div class="square"></div> 
-		<div class="square"></div> 
-		<div class="square"></div>
-		<div class="square-light"></div>
-		<div class="square-light"></div>
-		<div class="square-nil"></div>
-		<div class="square"></div> 
-		<div class="square-light"></div> 
-		<div class="square-light"></div>
-		<div class="square-light"></div>
-		<div class="square-light"></div>
-		<div class="square-nil"></div>
-		<div class="square"></div> 
-		<div class="square"></div> 
-		<div class="square"></div>
-		<div class="square-light"></div>
-		<div class="square-light"></div>
+		<div class="tooltip-box">
+			<span class="tooltip-info">Speaking</span>
+			<div class="square"></div> 
+			<div class="square"></div> 
+			<div class="square"></div>
+			<div class="square-light"></div>
+			<div class="square-nil"></div>
+		</div>
+		<div class="tooltip-box">
+			<span class="tooltip-info">Writing</span>
+			<div class="square"></div> 
+			<div class="square"></div> 
+			<div class="square"></div>
+			<div class="square-light"></div>
+			<div class="square-light"></div>
+			<div class="square-nil"></div>
+		</div>
+		<div class="tooltip-box">
+			<div class="square"></div> 
+			<div class="square"></div> 
+			<div class="square"></div>
+			<div class="square-light"></div>
+			<div class="square-light"></div>
+			<div class="square-nil"></div>
+			<div class="tooltip-info">Speaking</div>
+		</div>
+		<div class="tooltip-box">
+			<span class="tooltip-info">Writing</span>
+			<div class="square"></div> 
+			<div class="square"></div> 
+			<div class="square"></div>
+			<div class="square-light"></div>
+			<div class="square-light"></div>
+			<div class="square-nil"></div>
+		</div>
 	</div>
 
 </div>
@@ -199,8 +227,8 @@ permalink: curriculum-vitae/
 	<div>Projects</div>
 </div>
 <div class="boxed">
-	<strong>Zillioon v4</strong> - A Dynamic Management System builded for Mentefredda / Prossima Isola societies. Designed for Web Marketing, Hotels.
+	<strong>Zillioon v4</strong> - A Content Management System developed for Mentefredda / Prossima Isola societies. It was designed for the management of the web maketing about hotels.
 </div>
 <div class="boxed">
-	<strong>LightAidra 0x2012</strong> -  Lightidra is a mass-tool commanded by irc that allows scanning and exploiting routers for make BOTNET (in rx-bot style), in addition to this, with aidra you can perform some attacks with tcp flood.
+	<strong>Lightaidra</strong> -  Lightidra is a mass-tool commanded by irc that allows scanning and exploiting routers for make BOTNET (in rx-bot style), in addition to this, with aidra you can perform some attacks with tcp flood.
 </div>
