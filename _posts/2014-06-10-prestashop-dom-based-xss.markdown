@@ -7,7 +7,7 @@ permalink: post/prestashop-dom-based-xss/
 ---
 
 The version 1.6.0.6 of Prestashop is vulnerable to `DOM Based XSS`, the page location at
-`/index.php?controller=stores` show you the locations of stores, this feature can be enabled in the admin panel by `Preferences / Store Contacts`.
+`/index.php?controller=stores` show you the locations of the stores, this feature can be enabled from the admin panel by `Preferences / Store Contacts`.
 
 ### Vulnerable function is stored in the Core JS cached version (see stores.js)
 

@@ -42,7 +42,7 @@ This is a quick reference to generate a fully non-alphanumeric javascript c
   "true"[1]          | 'r'           | `([![]]+[])  [!+[]+!+[]+!+[]+!+[]]` | JS statement char of "true" array index 1
   "true"[0]          | 't'           | `([!![]]+[]) [[]*[]]`               | JS statement char of "true" array index 0
 
-**Concatenate and store non-alphanumeric "alert" to variable _**
+**Concatenate and store non-alphanumeric "alert" to the variable _**
 
 {% highlight js %}
 _ = ([![]]+[]) [+!+[]] + ([![]]+[]) [!+[]+!+[]] + ([![]]+[]) [!+[]+!+[]+!+[]+!+[]] + ([!![]]+[]) [++[[]][+[]]] + ([!![]]+[]) [[]*[]];
@@ -54,7 +54,7 @@ _ = ([![]]+[]) [+!+[]] + ([![]]+[]) [!+[]+!+[]] + ([![]]+[]) [!+[]+!+[]+!+[]+!+[
 
 ### How to execute "alert(1)" through root Object, Pointer or other possible methods
 
-Remember we have previously generate "alert" string and store It to _ variable.
+Remember that we have previously generate the "alert" string and we have stored It to _ variable.
 
   Function call                                   | Function prototype                     | Description
   ----------------------------------------------- | -------------------------------------- | --------------------------
@@ -101,7 +101,7 @@ Remember we have previously generate "alert" string and store It to _ variable.
   "function sort() { [native code] }"[12]         | ')'                                 | `([] [([![]]+[])[++[++[!![]][+[]]][+[]]] + ({}+[])[+!+[]] + ([!![]]+[]) [+!+[]] + ([!![]]+[])[+[]]]+[]) [!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]`
   "function sort() { [native code] }"[13]          | '('                                 | `([] [([![]]+[])[++[++[!![]][+[]]][+[]]] + ({}+[])[+!+[]] + ([!![]]+[]) [+!+[]] + ([!![]]+[])[+[]]]+[]) [!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]]`
 
-**Now concat the string "alert" stored at variable _ with "(0)"**
+**Now concat the string "alert" in the variable _ with "(0)"**
 
 {% highlight js %}
 _p = ([] [([![]]+[])[++[++[!![]][+[]]][+[]]] + ({}+[])[+!+[]] + ([!![]]+[]) [+!+[]] + ([!![]]+[])[+[]]]+[]) [!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]+!+[]] + // '('
@@ -152,7 +152,7 @@ Generating `"[].constructor.constructor("alert(0)")();"`<br>
 
 ## #4 Encoded possible characters list
 
-If you find a method to retrieve the unknowns, please mail me to update the document.
+If you find a method to retrieve the unknowns, please mail me.
 
   Char index           | Return char   | Non-Alphanumeric
   -------------------- | ------------- | -----------------------------------

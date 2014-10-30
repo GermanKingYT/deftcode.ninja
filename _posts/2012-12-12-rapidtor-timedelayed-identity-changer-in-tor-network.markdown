@@ -8,7 +8,7 @@ permalink: post/rapidtor-timedelayed-identity-changer-in-tor-network/
 
 ### Description
 
-With `RapidTor` you can change the identity in **Tor** network after how many seconds you wants, configure your torserver and `vidalia` or `polipo` with **ControlPort** support, after that use this class to login and change identity when you want.
+With `RapidTor` you can change the identity in **TOR** network after how many seconds you wants, configure your torserver and `Vidalia` or `Polipo` with **ControlPort** support, after that use this Class to make login and change identity whenever you want.
 
 ### Configuration And Usage
 

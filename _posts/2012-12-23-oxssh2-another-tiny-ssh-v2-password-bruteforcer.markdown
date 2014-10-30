@@ -8,7 +8,7 @@ permalink: post/oxssh2-another-tiny-ssh-v2-password-bruteforcer/
 
 ### Description
 
-This a small tool thats allow you to bruteforce ssh account of a remote server.
+This a small tool that allow you to make a SSH2 Bruteforce Attack.
 
 {% highlight bash %}
 usage: ./oxssh2 <hostname> <port> <words.lst>
@@ -16,7 +16,7 @@ usage: ./oxssh2 <hostname> <port> <words.lst>
 
 ### Dependency
 
-Require a `libssh2-dev` (client-side C library implementing the SSH2 protocol)
+This require a `libssh2-dev` (SSH2 client-side library - development headers)
 
 ### Example video demostration
 

