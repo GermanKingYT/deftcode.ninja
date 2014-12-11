@@ -8,7 +8,7 @@ permalink: post/stored-xss-in-google-shopping-express-through-wallet/
 
 ### Description
 
-I've found a Cross-site Scriping in Google Shopping Express Through It's Wallet data.
+Found a Cross-site Scriping in Google Shopping Express Through It's Wallet data.
 
 > Wikipedia: Google Shopping Express is a same-day shopping service ("shop local stores online and get items delivered on the same day") from Google that was launched on a free trial basis in San Francisco and Silicon Valley in spring 2013 and publicly in September that year. In spring 2014 it was expanded to New York and Los Angeles, and in fall 2014 to Chicago, Boston, and Washington, DC.
 
