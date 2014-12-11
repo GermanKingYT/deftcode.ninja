@@ -1,6 +1,6 @@
 # DEFTCODE YML Settings
 
-port: 80
+port: 8000
 
 title: DEFTCODE
 email: eurialo@deftcode.ninja

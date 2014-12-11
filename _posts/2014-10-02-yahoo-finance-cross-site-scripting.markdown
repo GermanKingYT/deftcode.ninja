@@ -15,7 +15,7 @@ Found a `Stored Cross-site Scriping` in `Yahoo! Finance`.
 
 ### Proof of Concept of Stored XSS:
 
-* Go to [Yahoo! Finance](https://it.finance.yahoo.com/, "Yahoo! Finance")
+* Go to [Yahoo! Finance](https://it.finance.yahoo.com/ "Yahoo! Finance")
 * Create new portfolio and show It
 * Click to `"Add/modify codes"`
 * Generate the vector payload
@@ -49,4 +49,4 @@ where **XX** = `id of created portfolio`
 
 ### Acknowledgement
 
-Thanks Yahoo! Security Team for the add to [Wall Of Fame](https://hackerone.com/yahoo/thanks, "Yahoo! Wall Of Fame - eurialo").
+Thanks Yahoo! Security Team for the add to [Wall Of Fame](https://hackerone.com/yahoo/thanks "Yahoo! Wall Of Fame - eurialo").

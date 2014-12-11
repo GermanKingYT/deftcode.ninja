@@ -29,10 +29,8 @@ During publishing this site I've added the Addthis.com plugin (one of the most p
 3. **User_X login** into his Addthis.com account (**ra-5438e922313abc3a** was assigned to **User_X**)
 4. **User_X** make a **POST Request** to:  
 **https://www.addthis.com/meta-data/boost-create-widget** endpoint with **crafted header**  
-([Live HTTP Headers](https://addons.mozilla.org/it/firefox/addon/live-http-headers/, "Live HTTP Headers")) using method `boost-create-widget`
+([Live HTTP Headers](https://addons.mozilla.org/it/firefox/addon/live-http-headers/ "Live HTTP Headers")) using method `boost-create-widget`
 5. **Before User_X make a POST Request**, The **pub property** need to be changed with vulnerable site property value (ex. **(User_X) ra-5438e922313abc3a => (User_Y) ra-538ce0c960e04da4**)
-
-<!--r34dm0r3-->
 
 #### Example POST Request Header
 

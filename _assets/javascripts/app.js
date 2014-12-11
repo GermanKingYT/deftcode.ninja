@@ -32,7 +32,7 @@
 
 
 	// Add a cross-browser events listener
-	var AddCrossEvent = function(ptr, evt, funct) {
+	var addCrossEvent = function(ptr, evt, funct) {
 
 		if (typeof ptr.addEventListener !== "undefined") {
 			ptr.addEventListener(evt, funct, false);
@@ -47,7 +47,7 @@
 	};
 
 	// Viewport iPhone scale
-	exports.ViewPort = function() {
+	exports.viewPort = function() {
 
 		if (navigator.userAgent.match(/iPhone/i)) {
 			for (i = 0; i < metas.length; i++) {
@@ -56,13 +56,13 @@
 				}
 			}
 
-			AddCrossEvent(_d, "gesturestart", _ManageViewport);
+			addCrossEvent(_d, "gesturestart", _manageViewport);
 		}
 
 	};
 
 	// Manage scales
-	var _ManageViewport = function() {
+	var _manageViewport = function() {
 
 		for (i = 0; i < metas.length; i++) {
 			if (metas[i].name == "viewport") {
@@ -74,16 +74,16 @@
 
 
 	// Enable toggle
-	exports.Toggle = function() {
+	exports.toggle = function() {
 
 		if (_d.getElementById("toggle")) {
 			exports.t = _d.getElementById("toggle");
 
 			if (!/curriculum-vita/g.test(window.location.pathname)) {
-				AddCrossEvent(exports.t, "click", _ManageToggle);
+				addCrossEvent(exports.t, "click", _manageToggle);
 			}
 			else {
-				AddCrossEvent(exports.t, "click", function() {
+				addCrossEvent(exports.t, "click", function() {
 					_d.location.replace(_d.location.origin);
 				});
 			}
@@ -95,7 +95,7 @@
 	};
 
 	// Page width management
-	var _ManageToggle = function() {
+	var _manageToggle = function() {
 
 		var h = _d.getElementsByTagName("header")[0],
 			f = _d.getElementsByTagName("footer")[0],
@@ -170,7 +170,7 @@
 
 		// bind events
 		for (var value in _config.scrollbar.events) {
-			AddCrossEvent(_config.wrapper, value, _config.scrollbar.events[value], false);
+			addCrossEvent(_config.wrapper, value, _config.scrollbar.events[value], false);
 		}
 
 	};
@@ -245,5 +245,5 @@
 }));
 
 //APP.start('content');
-APP.ViewPort();
-APP.Toggle();
+APP.viewPort();
+APP.toggle();

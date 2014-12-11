@@ -14,7 +14,7 @@ During my research I've found a Multiple Cross-site Scriping in eBay Motors.
 
 ### Proof of Concept of Stored XSS:
 
-* First go to eBay Motors Garage page [eBay Motors](http://www.ebay.com/motors/garage/, "eBay Motors") and go to `My Vehicles`
+* First go to eBay Motors Garage page [eBay Motors](http://www.ebay.com/motors/garage/ "eBay Motors") and go to `My Vehicles`
 * Then click to `Add new Vehicle`
 * Insert this vector into `Add tags to your vehicle (optional)` input:
 
@@ -25,7 +25,7 @@ During my research I've found a Multiple Cross-site Scriping in eBay Motors.
 
 ### Proof of Concept of Reflect XSS:
 
-* Go to eBay Motors page at [eBay Motors - Parts Accessories](http://www.ebay.com/motors/Parts-Accessories/, "eBay Motors - Parts Accessories")
+* Go to eBay Motors page at [eBay Motors - Parts Accessories](http://www.ebay.com/motors/Parts-Accessories/ "eBay Motors - Parts Accessories")
 * Search for a Accessories
 * Add this vector to `GET` URI parameter **&_sasl=[vector]**
 
@@ -59,4 +59,4 @@ During my research I've found a Multiple Cross-site Scriping in eBay Motors.
 
 ### Acknowledgement
 
-Thanks eBay Security Team for the [Acknowledgement](http://ebay.com/securitycenter/ResearchersAcknowledgement.html, "eBay Acknowledgement - Federico Fazzi").
+Thanks eBay Security Team for the [Acknowledgement](http://ebay.com/securitycenter/ResearchersAcknowledgement.html "eBay Acknowledgement - Federico Fazzi").

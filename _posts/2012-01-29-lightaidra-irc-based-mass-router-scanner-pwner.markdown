@@ -56,7 +56,7 @@ command-line, the nature of the bug and other.
 ### Sources
 
 <span id="sources-list">
-[View on GitHub](https://github.com/eurialo/lightaidra "GitHub LighAidra")
-[Direct Download](https://github.com/eurialo/lightaidra "Download LighAidra")
+[View on GitHub](https://github.com/eurialo/lightaidra/ "GitHub LighAidra")
+[Direct Download](https://github.com/eurialo/lightaidra/ "Download LighAidra")
 </span>
 

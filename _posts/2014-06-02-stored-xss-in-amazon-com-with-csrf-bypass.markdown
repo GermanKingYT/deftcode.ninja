@@ -18,7 +18,7 @@ The **Amazon YourMediaLibrary** is vulnerable to stored `XSS Vulnerability`, the
 
 **Let's go:**
 
-* First go to yourmedialibrary page [Amazon YourMediaLibrary](https://www.amazon.com/gp/ays/index.html, "Amazon YourMediaLibrary") and click to Profile
+* First go to yourmedialibrary page [Amazon YourMediaLibrary](https://www.amazon.com/gp/ays/index.html "Amazon YourMediaLibrary") and click to Profile
 * Insert this vector into `Interests` or `In my own words` inputs:
 
 		%253Cscript%253Ealert(document.cookie)%253C%252Fscript%253E

@@ -48,8 +48,6 @@ This is a quick reference to generate a fully non-alphanumeric javascript c
 _ = ([![]]+[]) [+!+[]] + ([![]]+[]) [!+[]+!+[]] + ([![]]+[]) [!+[]+!+[]+!+[]+!+[]] + ([!![]]+[]) [++[[]][+[]]] + ([!![]]+[]) [[]*[]];
 {% endhighlight %}
 
-<!--r34dm0r3-->
-
 ## #3 Types of execution methods
 
 ### How to execute "alert(1)" through root Object, Pointer or other possible methods
