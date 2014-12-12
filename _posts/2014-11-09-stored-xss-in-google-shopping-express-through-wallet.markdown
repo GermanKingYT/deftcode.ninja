@@ -46,7 +46,7 @@ Found a Cross-site Scriping in Google Shopping Express Through It's Wallet data.
 	</video>
 </div>
 
-Watch in <a href="https://www.youtube.com/watch?v=xxx" title="Google Shopping Express XSS" target="_blank">YouTube</a>
+Watch in <a href="https://www.youtube.com/watch?v=oFeD74zwA00" title="Google Shopping Express XSS" target="_blank">YouTube</a>
 
 ### Disclosure:
 
