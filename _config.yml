@@ -1,6 +1,6 @@
 # DEFTCODE YML Settings
 
-port: 80
+port: 9000
 
 title: DEFTCODE
 email: eurialo@deftcode.ninja
@@ -9,7 +9,7 @@ baseurl: ""
 url: "http://deftcode.ninja"
 
 google_username: federicofazzi
-google_url: "https://plus.google.com/110438956640429796386"
+google_url: "https://plus.google.com/+FedericoFazzi"
 
 twitter_username: federicofazzi
 twitter_url: "https://twitter.com/federicofazzi"

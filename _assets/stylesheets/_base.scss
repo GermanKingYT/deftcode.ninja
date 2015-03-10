@@ -79,7 +79,9 @@ code, pre {
 }
 
 p > code {
-	background: #f5f6f5;
+	/*background: #f9f9f9;*/
+	background: url(/images/blueprint-dark.png) top center;
+	border: 1px #eee solid;
 	padding: 1px 5px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -89,7 +91,9 @@ p > code {
 }
 
 pre {
-	background: #f8f8f8;
+	/*background: #f9f9f9;*/
+	background: url(/images/blueprint-dark.png) top center;
+	border-left: 5px solid #444;
 	padding: 8px 15px;
 	overflow-x: auto;
 }
@@ -161,17 +165,17 @@ hr {
 	}
 
 	small {
-		background: #f5f6f5;
+		/*background: #f5f6f5;*/
 		display: inline-block;
 		font-weight: 900;
 		font-size: 12px;
 		padding: 1px 5px;
+		border-radius: 3px;
+		border: 1px #eee solid;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		-ms-border-radius: 3px;
 		-o-border-radius: 3px;
-		border-radius: 3px;
-		border: 1px #eee solid;
 	}
 
 	#navbar {
@@ -223,16 +227,16 @@ section {
 	}
 
 	.post-meta {
-		background: #f5f6f5;
 		display: inline-block;
 		font-weight: 900;
 		font-size: 12px;
 		padding: 1px 5px;
+		border-radius: 3px;
+		border: 1px #eee solid;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		-ms-border-radius: 3px;
 		-o-border-radius: 3px;
-		border-radius: 3px;
 	}
 
 	#sources-list a {
@@ -338,7 +342,7 @@ footer {
 
 		header .explain.contact {
 			margin-top: 30px;
-			div:first-child, div:nth-child(2) {
+			div:nth-child(3), div:nth-child(4) {
 				display: none;
 			}
 		}
@@ -406,7 +410,7 @@ footer {
 
 		header .explain.contact {
 			margin-top: 30px;
-			div:first-child, div:nth-child(2) {
+			div:nth-child(3), div:nth-child(4) {
 				display: none;
 			}
 		}
@@ -482,7 +486,7 @@ footer {
 
 		header .explain.contact {
 			margin-top: 30px;
-			div:first-child, div:nth-child(2) {
+			div:nth-child(3), div:nth-child(4) {
 				display: none;
 			}
 		}

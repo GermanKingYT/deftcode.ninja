@@ -15,7 +15,7 @@ permalink: security/
 			{% endif %}
 
 			<li>
-				{% if post.url contains 'yahoo-finance' %}
+				<!--{% if post.url contains 'yahoo-finance' %}
 					<a class="post-link" href="#" title="{{ post.title }}">
 						<h2><span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span> – {{ post.title }} - (soon..)</h2>
 					</a>
@@ -23,7 +23,10 @@ permalink: security/
 					<a class="post-link" href="{{ post.url | prepend: site.url }}" title="{{ post.title }}">
 						<h2><span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span> – {{ post.title }}</h2>
 					</a>
-				{% endif %}
+				{% endif %}-->
+				<a class="post-link" href="{{ post.url | prepend: site.url }}" title="{{ post.title }}">
+					<h2><span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span> – {{ post.title }}</h2>
+				</a>
 				<small>CATEGORY: {{ post.categories[0] | upcase }}</small>
 			</li>
 		{% endif %}

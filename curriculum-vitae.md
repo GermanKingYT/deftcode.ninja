@@ -4,134 +4,125 @@ title: "Curriculum Vitae"
 permalink: curriculum-vitae/
 ---
 <div id="experience" class="left-icon">
-	<div>Experience</div>
+	<div>Job Experiences</div>
 </div>
 <div class="explain-alt">
 	<div class="what-container">
 		<div class="what-date">
-			February<br>2013
+			February<br>– 2015
 		</div>
 		<div class="what-box">
-			<div class="what">
-				<span class="progress">IN PROGRESS</span> Analyst And Software Developer
-			</div>
-			<div class="what-where">
-				Mentefredda S.r.l. – mentefredda.it
-			</div>
-			<div class="what-description">
-				Web PHP Software Developer of a proprietary DMS named Zillioon for Hotel Management.
-			</div>
+			<div class="what"><span class="progress">CURRENT</span> Security Consultant – Penetration Tester</div>
+			<div class="what-where">Sanvil S.r.l. – <a href="http://sanvil.net" title="Sanvil S.r.l" target="_blank">sanvil.net</a></div>
+			<div class="what-description boxed-xs">Security consultant and researcher for external companies. <br>Penetration tester and security breaker guy.</div>
 		</div>
 	</div>
 
 	<div class="what-container">
 		<div class="what-date">
-			May 2014
+			May – 2014<br>
+			Mar – 2015
 		</div>
 		<div class="what-box">
-			<div class="what">
-				<span class="progress">IN PROGRESS</span> Developer
-			</div>
-			<div class="what-where">
-				ProssimaIsola S.r.l. – prossimaisola.com
-			</div>
-			<div class="what-description">
-				Web PHP Software Developer.
-			</div>
+			<div class="what">Analyst, Software Developer – Security Managements</div>
+			<div class="what-where">ProssimaIsola S.r.l. – <a href="http://www.prossimaisola.com" title="ProssimaIsola S.r.l" target="_blank">prossimaisola.com</a></div>
+			<div class="what-description boxed-xs">Backend software developer and security managements.</div>
 		</div>
 	</div>
 
 	<div class="what-container">
 		<div class="what-date">
-			November<br>2012
+			Feb – 2013<br>
+			Mar – 2015
 		</div>
 		<div class="what-box">
-			<div class="what">
-				ICT Security Consultant – Developer
-			</div>
-			<div class="what-where">
-				Shambix S.r.l. – shambix.com
-			</div>
-			<div class="what-description">
-				Security Consultant of their systems and Wordpress Plugins Developer.
-			</div>
+			<div class="what">Analyst, Software Developer</div>
+			<div class="what-where">Mentefredda S.r.l. – <a href="http://www.mentefredda.it" title="Mentefredda S.r.l" target="_blank">mentefredda.it</a></div>
+			<div class="what-description boxed-xs">Developer of a proprietary DMS named Zillioon for Hotel management.</div>
 		</div>
 	</div>
 
 	<div class="what-container">
 		<div class="what-date">
-			April 2012
+			Nov – 2012<br>
+			May – 2013
 		</div>
 		<div class="what-box">
-			<div class="what">
-				Developer
-			</div>
-			<div class="what-where">
-				Tuxel S.r.l. – tuxel.com
-			</div>
-			<div class="what-description">
-				Web PHP Back-End Applications Developer (E-commerce).
-			</div>
+			<div class="what">ICT Security Consultant – Developer</div>
+			<div class="what-where">Shambix S.r.l. – <a href="http://www.shambix.com" title="Shambix S.r.l" target="_blank">shambix.com</a></div>
+			<div class="what-description boxed-xs">Security consultant for externals and Wordpress plugins developer.</div>
+		</div>
+	</div>
+
+	<div class="what-container">
+		<div class="what-date">
+			Apr – 2012<br>
+			Oct – 2012
+		</div>
+		<div class="what-box">
+			<div class="what">Analyst, Software Developer</div>
+			<div class="what-where">Tuxel S.r.l. – <a href="http://tuxel.com" title="Tuxel S.r.l" target="_blank">tuxel.com</a></div>
+			<div class="what-description boxed-xs">PHP backend application developer (e-commerce platform).</div>
 		</div>
 	</div>
 </div>
 
 <div id="awards" class="left-icon">
-	<div>Awards</div>
+	<div>Honors – Awards</div>
 </div>
-<div class="explain-alt">
+<div class="explain-alt awards">
 	<div class="what-container">
 		<div class="what-date">
-			October<br>2014
+			Nov – 2014
 		</div>
 		<div class="what-box">
-			<div class="what">
-				Yahoo Responsible Disclosure - Wall Of Fame
-			</div>
-			<div class="what-where">
-				Yahoo Inc.
-			</div>
-			<div class="what-description">
-				https://hackerone.com/yahoo/thanks - @eurialo
+			<div class="what">Google Responsible Disclosure – Hall of Fame</div>
+			<div class="what-where">Google</div>
+			<div class="what-description boxed-xs">
+				<a href="https://www.google.com/about/appsecurity/hall-of-fame/reward" title="Google - Hall Of Fame" target="_blank">https://www.google.com/about/appsecurity/hall-of-fame/reward</a>
 			</div>
 		</div>
 	</div>
+
 	<div class="what-container">
 		<div class="what-date">
-			July 2014
+			Jul – 2014
 		</div>
 		<div class="what-box">
-			<div class="what">
-				Ebay Responsible Disclosure Acknowledgement
+			<div class="what">Ebay Responsible Disclosure – Acknowledgement</div>
+			<div class="what-where">Ebay Inc.</div>
+			<div class="what-description boxed-xs">
+				<a href="http://ebay.com/securitycenter/ResearchersAcknowledgement.html" title="Ebay - Hall Of Fame" target="_blank">http://ebay.com/securitycenter/ResearchersAcknowledgement.html</a>
 			</div>
-			<div class="what-where">
-				Ebay Inc.
-			</div>
-			<div class="what-description">
-				http://ebay.com/securitycenter/ResearchersAcknowledgement.html
+		</div>
+	</div>
+
+	<div class="what-container">
+		<div class="what-date">
+			Oct – 2014
+		</div>
+		<div class="what-box">
+			<div class="what">Yahoo Responsible Disclosure – Wall Of Fame</div>
+			<div class="what-where">Yahoo Inc.</div>
+			<div class="what-description boxed-xs">
+				<a href="https://hackerone.com/yahoo/thanks - @eurialo" title="Yahoo - Wall Of Fame" target="_blank">https://hackerone.com/yahoo/thanks – @eurialo</a>
 			</div>
 		</div>
 	</div>
 </div>
 
 <div id="education" class="left-icon">
-	<div class="what">Education</div>
+	<div class="what">Education – Certifications</div>
 </div>
 <div class="explain-alt">
 	<div class="what-container">
 		<div class="what-date">
-			June 2010
+			Jun – 2010
 		</div>
 		<div class="what-box">
-			<div class="what">
-				Certificate of Accountancy
-			</div>
-			<div class="what-where">
-				Kennedy Institute
-			</div>
-			<div class="what-description">
-				
-			</div>
+			<div class="what">Certificate of Accountancy</div>
+			<div class="what-where">Kennedy Institute.</div>
+			<div class="what-description boxed-xs"></div>
 		</div>
 	</div>
 </div>
@@ -141,94 +132,350 @@ permalink: curriculum-vitae/
 </div>
 <div class="explain-alt">
 	<div class="language-container">
-		<div class="language-label">ITALIAN</div> 
-		<div class="tooltip-box">
-			<span class="tooltip-info">Speaking</span>
-			<div class="square"></div> 
-			<div class="square"></div> 
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square-nil"></div>
-		</div>
-
-		<div class="tooltip-box">
-			<span class="tooltip-info">Writing</span>
-			<div class="square"></div> 
-			<div class="square"></div> 
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square-nil"></div>
-		</div>
-
-		<div class="tooltip-box">
-			<span class="tooltip-info">Speaking</span>
-			<div class="square"></div> 
-			<div class="square"></div> 
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square-nil"></div>
-		</div>
-
-		<div class="tooltip-box">
-			<span class="tooltip-info">Writing</span>
-			<div class="square"></div> 
-			<div class="square"></div> 
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square"></div>
-			<div class="square-nil"></div>
-		</div>
+		<div class="language-label">ITALIAN</div>
+		<div class="language-info"><div class="percentage p-100">LISTENING</div></div>
+		<div class="language-info"><div class="percentage p-100">READING</div></div>
+		<div class="language-info"><div class="percentage p-100">SPEAKING</div></div>
+		<div class="language-info"><div class="percentage p-100">WRITING</div></div>
 	</div>
 	<div class="language-container">
-		<div class="language-label">ENGLISH</div> <div class="square"></div> 
-		<div class="tooltip-box">
-			<span class="tooltip-info">Speaking</span>
-			<div class="square"></div> 
-			<div class="square"></div> 
-			<div class="square"></div>
-			<div class="square-light"></div>
-			<div class="square-nil"></div>
+		<div class="language-label">ENGLISH</div>
+		<div class="language-info"><div class="percentage p-70">LISTENING</div></div>
+		<div class="language-info"><div class="percentage p-95">READING</div></div>
+		<div class="language-info"><div class="percentage p-75">SPEAKING</div></div>
+		<div class="language-info"><div class="percentage p-85">WRITING</div></div>
+	</div>
+</div>
+
+<div id="endorsements" class="left-icon">
+	<div>Endorsements – Skillz</div>
+</div>
+<div class="explain-alt">
+	<div class="endorsement-container">
+		<div class="endorsement-label">SECURITY</div> 
+		<div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
 		</div>
-		<div class="tooltip-box">
-			<span class="tooltip-info">Writing</span>
-			<div class="square"></div> 
-			<div class="square"></div> 
-			<div class="square"></div>
-			<div class="square-light"></div>
-			<div class="square-light"></div>
-			<div class="square-nil"></div>
+		<div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
 		</div>
-		<div class="tooltip-box">
-			<div class="square"></div> 
-			<div class="square"></div> 
-			<div class="square"></div>
-			<div class="square-light"></div>
-			<div class="square-light"></div>
-			<div class="square-nil"></div>
-			<div class="tooltip-info">Speaking</div>
+		<div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square"></div>
+			<div class="square"></div><div class="square"></div><div class="square-nil"></div>
 		</div>
-		<div class="tooltip-box">
-			<span class="tooltip-info">Writing</span>
-			<div class="square"></div> 
-			<div class="square"></div> 
-			<div class="square"></div>
-			<div class="square-light"></div>
-			<div class="square-light"></div>
-			<div class="square-nil"></div>
+		<div>
+			<div class="square-light"></div><div class="square-light"></div><div class="square-light"></div>
+			<div class="square-light"></div><div class="square-light"></div><div class="square-nil"></div>
 		</div>
 	</div>
+	<div class="endorsement-container">
+		<div class="endorsement-label">PENTEST</div>
+		<div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+		</div>
+		<div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+		</div>
+		<div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+		</div>
+		<div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square"></div>
+			<div class="square"></div><div class="square"></div><div class="square-nil"></div>
+		</div>
+	</div>
+	<div class="endorsement-container">
+		<div class="endorsement-label">LINUX <small>*</small></div>
+		<div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+		</div>
+		<div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+		</div>
+		<div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+		</div>
+		<div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+		</div>
+	</div>
+	
+	<div id="load-more">
+		<a id="load-more-link" href="#" title="Read more">Load more</a>
+	</div>
 
+	<div id="load-more-content" class="hidden">
+		<div class="endorsement-container">
+			<div class="endorsement-label">WINDOWS <small>*</small></div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+		</div>
+		<div class="endorsement-container">
+			<div class="endorsement-label">BSD <small>*</small></div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-light"></div><div class="square-light"></div><div class="square-light"></div>
+				<div class="square-light"></div><div class="square-light"></div><div class="square-nil"></div>
+			</div>
+		</div>
+		<div class="endorsement-container">
+			<div class="endorsement-label">SHELL</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square"></div><div class="square"></div><div class="square"></div>
+				<div class="square"></div><div class="square"></div><div class="square-nil"></div>
+			</div>
+		</div>
+		<div class="endorsement-container">
+			<div class="endorsement-label">C</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square"></div>
+				<div class="square"></div><div class="square"></div><div class="square-nil"></div>
+			</div>
+		</div>
+		<div class="endorsement-container">
+			<div class="endorsement-label">RUBY</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square"></div><div class="square"></div><div class="square"></div>
+				<div class="square"></div><div class="square-light"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-light"></div><div class="square-light"></div><div class="square-light"></div>
+				<div class="square-light"></div><div class="square-light"></div><div class="square-nil"></div>
+			</div>
+		</div>
+		<div class="endorsement-container">
+			<div class="endorsement-label">PYTHON</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square"></div><div class="square"></div>
+				<div class="square"></div><div class="square"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-light"></div><div class="square-light"></div><div class="square-light"></div>
+				<div class="square-light"></div><div class="square-light"></div><div class="square-nil"></div>
+			</div>
+		</div>
+		<div class="endorsement-container">
+			<div class="endorsement-label">PHP</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+		</div>
+		<div class="endorsement-container">
+			<div class="endorsement-label">SQL (ERM)</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square"></div><div class="square"></div><div class="square"></div>
+				<div class="square"></div><div class="square"></div><div class="square-nil"></div>
+			</div>
+		</div>
+		<div class="endorsement-container">
+			<div class="endorsement-label">HTML5/CSS</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+		</div>
+		<div class="endorsement-container">
+			<div class="endorsement-label">JAVASCRIPT</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square"></div><div class="square"></div><div class="square-nil"></div>
+			</div>
+		</div>
+		<div class="endorsement-container">
+			<div class="endorsement-label">NODE.JS</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square"></div><div class="square"></div><div class="square-nil"></div>
+			</div>
+		</div>
+		<div class="endorsement-container">
+			<div class="endorsement-label">JAVA</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div> 
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square"></div><div class="square"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-light"></div><div class="square-light"></div><div class="square-light"></div>
+				<div class="square-light"></div><div class="square-light"></div><div class="square-nil"></div>
+			</div>
+			<div>
+				<div class="square-light"></div><div class="square-light"></div><div class="square-light"></div>
+				<div class="square-light"></div><div class="square-light"></div><div class="square-nil"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="interests" class="left-icon">
+	<div>Interests</div>
+</div>
+<div class="boxed">
+	Information and Communications Technology, Information Security, Coding, System Administration, Penetration(BlackBox) Testing, Vulnerability Assestment and Mitigation, Reseach, Hardening, Audits, Exploits, Cryptocurrency(Bitcoin) and Problem Analysis/Solving.
 </div>
 
 <div id="projects" class="left-icon">
 	<div>Projects</div>
 </div>
 <div class="boxed">
-	<strong>Zillioon v4</strong> - A Content Management System developed for Mentefredda / Prossima Isola societies. It was designed for the management of the web maketing about hotels.
+	<strong>Zillioon v4</strong> – Zillioon is an owner Content Management System constantly developed by merged companies Mentefredda Srl and Prossima Isola Srl. It is a marketing and content management system, equipped with useful utility tools dedicated to hotels.
+	<div class="project-url">
+		<a href="http://www.mentefredda.it" title="Mentefredda Srl - Zillioon v4" target="_blank">http://www.mentefredda.it</a>
+	</div>
 </div>
 <div class="boxed">
-	<strong>Lightaidra</strong> -  Lightidra is a mass-tool commanded by irc that allows scanning and exploiting routers for make BOTNET (in rx-bot style), in addition to this, with aidra you can perform some attacks with tcp flood.
+	<strong>Lightaidra</strong> – Lightidra is a mass-tool commanded by irc that allows scanning and exploiting routers for make BOTNET (in rx-bot style), in addition to this, with aidra you can perform some attacks with tcp flood.
+	<div class="project-url">
+		<a href="https://github.com/eurialo/lightaidra" title="Lightaidra" target="_blank">https://github.com/eurialo/lightaidra</a>
+	</div>
+</div>
+<div class="boxed">
+	<strong>RapidTOR</strong> – Rapidtor is a timedelayed identity changer for TOR network, that allows you to change your tor node connection every X seconds.
+	<div class="project-url">
+		<a href="https://github.com/eurialo/rapidtor" title="RapidTOR" target="_blank">https://github.com/eurialo/rapidtor</a>
+	</div>
+</div>
+<div class="boxed">
+	<strong>OXSSH2</strong> – OXSSH is a tiny SSH version 2 interactive password bruteforcer that use a wordlist as source.
+	<div class="project-url">
+		<a href="https://github.com/eurialo/oxssh2" title="GitHub - OXSSH2" target="_blank">https://github.com/eurialo/oxssh2</a>
+	</div>
 </div>

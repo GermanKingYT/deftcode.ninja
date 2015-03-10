@@ -1,5 +1,5 @@
 /**
- * DEFTCODE APP MODULE (C) 2014
+ * DEFTCODE APP MODULE (C) 2015
  */
 
 // Root object (window, ..)
@@ -31,14 +31,21 @@
 	 */
 
 
-	// Add a cross-browser events listener
-	var addCrossEvent = function(ptr, evt, funct) {
+	/**
+	 * Add a cross-browser events listener.
+	 *
+	 * @param {string}		Selector id name.
+	 * @param {string}		Event type name.
+	 * @param {function}	Callback function on custom event.
+	 * @return {void}
+	 */
+	var AddCrossEvent = function (ptr, event, funct) {
 
 		if (typeof ptr.addEventListener !== "undefined") {
-			ptr.addEventListener(evt, funct, false);
+			ptr.addEventListener(event, funct, false);
 		}
 		else if (typeof ptr.attachEvent !== "undefined") {
-			ptr.attachEvent('on' + evt, funct);
+			ptr.attachEvent('on' + event, funct);
 		}
 		else {
 			throw "Invalid event handler";
@@ -46,8 +53,13 @@
 
 	};
 
-	// Viewport iPhone scale
-	exports.viewPort = function() {
+	/**
+	 * Viewport iPhone scale.
+	 *
+	 * @param {void}
+	 * @return {void}
+	 */
+	exports.ViewPort = function () {
 
 		if (navigator.userAgent.match(/iPhone/i)) {
 			for (i = 0; i < metas.length; i++) {
@@ -56,13 +68,18 @@
 				}
 			}
 
-			addCrossEvent(_d, "gesturestart", _manageViewport);
+			AddCrossEvent(_d, "gesturestart", _ManageViewport);
 		}
 
 	};
 
-	// Manage scales
-	var _manageViewport = function() {
+	/**
+	 * Manage scales.
+	 *
+	 * @param {void}
+	 * @return {void}
+	 */
+	var _ManageViewport = function () {
 
 		for (i = 0; i < metas.length; i++) {
 			if (metas[i].name == "viewport") {
@@ -73,17 +90,22 @@
 	};
 
 
-	// Enable toggle
-	exports.toggle = function() {
+	/**
+	 * Enable toggle.
+	 *
+	 * @param {void}
+	 * @return {void}
+	 */
+	exports.Toggle = function () {
 
 		if (_d.getElementById("toggle")) {
 			exports.t = _d.getElementById("toggle");
 
-			if (!/curriculum-vita/g.test(window.location.pathname)) {
-				addCrossEvent(exports.t, "click", _manageToggle);
+			if (!/curriculum-vitae/g.test(window.location.pathname)) {
+				AddCrossEvent(exports.t, "click", _ManageToggle);
 			}
 			else {
-				addCrossEvent(exports.t, "click", function() {
+				AddCrossEvent(exports.t, "click", function() {
 					_d.location.replace(_d.location.origin);
 				});
 			}
@@ -94,8 +116,13 @@
 
 	};
 
-	// Page width management
-	var _manageToggle = function() {
+	/**
+	 * Page width management.
+	 *
+	 * @param {void}
+	 * @return {void}
+	 */
+	var _ManageToggle = function () {
 
 		var h = _d.getElementsByTagName("header")[0],
 			f = _d.getElementsByTagName("footer")[0],
@@ -116,14 +143,73 @@
 
 	};
 
+	/**
+	 * Display hidden box by load-more button.
+	 *
+	 * @param {void}
+	 * @return {void}
+	 */
+	exports.LoadMore = function () {
+
+		var m = _d.getElementById('load-more'),
+			ll = _d.getElementById('load-more-link'),
+			lc = _d.getElementById('load-more-content');
+
+		if (ll instanceof Object === true) {
+			AddCrossEvent(ll, "click", function(event) {
+				event.preventDefault();
+				fadeEffect(false, lc, 50);
+				lc.style.display = "inherit";
+				m.style.display = "none";
+			});
+		}
+
+	};
+
+	/**
+	 * Fade in/out effect.
+	 *
+	 * @param {int}     FX type: fadeIn = 0, fadeOut = 1
+	 * @param {object}  Element object.
+	 * @param {int}     Effect interval speed (default: 25).
+	 * @return {void}
+	 */
+	var fadeEffect = function (inout, element, speed) {
+
+		speed = speed || 25;
+
+		var io_map = {
+			0: 1.0,
+			1: 0.0
+		}, o = inout,
+	
+		timer = setInterval(function () {
+
+			if (o >= io_map[inout]) {
+				clearInterval(timer);
+			}
+
+			element.style.opacity = o;
+			element.style.filter = 'alpha(opacity=' + o * 100 + ")";
+			o += 0.1;
+	
+		}, speed);
+
+	};
+
 
 	/**
 	 * SCROLLBAR STUFF 
 	 */
 
 
-	// Init scrollbar
-	exports.start = function(content) {
+	/**
+	 * Init scrollbar.
+	 *
+	 * @param {string}	Selector id.
+	 * @return {void}
+	 */
+	exports.start = function (content) {
 
 		// get scroll content by id
 		_config.content = document.getElementById(content);
@@ -170,13 +256,18 @@
 
 		// bind events
 		for (var value in _config.scrollbar.events) {
-			addCrossEvent(_config.wrapper, value, _config.scrollbar.events[value], false);
+			AddCrossEvent(_config.wrapper, value, _config.scrollbar.events[value], false);
 		}
 
 	};
 
-	// Do scroll function event
-	var eventScroll = function(e) {
+	/**
+	 * Do scroll function event.
+	 *
+	 * @param {object}	Event object.
+	 * @return {void}
+	 */
+	var eventScroll = function (event) {
 
 		_config.scrollbar.top = _config.scrollbar.offsetTop;
 
@@ -187,7 +278,7 @@
 			_config.scrollbar.top -= 1;
 		}
 
-		if (e.wheelDelta == -120) {
+		if (event.wheelDelta == -120) {
 			_config.scrollbar.style.top = _config.scrollbar.top + 1 + "px";
 		}
 		else {
@@ -196,34 +287,49 @@
 
 		_config.content.style.top = -(_config.scrollbar.top * _config.ratio);
 
-		e.preventDefault();
+		event.preventDefault();
 
 	};
 
-	// Enable content moving
-	var enableMoving = function(e) {
+	/**
+	 * Enable content moving.
+	 *
+	 * @param {object}	Event object.
+	 * @return {void}
+	 */
+	var enableMoving = function (event) {
 
-		e.preventDefault();
+		event.preventDefault();
 
 		_config.scrollbar.className = "scrollbar draggable";
-		_config.scrollbar.startDrag = _config.scrollbar.startDrag || (e.clientY - e.layerY + _config.scrollbar.offsetHeight * 1/2);
+		_config.scrollbar.startDrag = _config.scrollbar.startDrag || (event.clientY - event.layerY + _config.scrollbar.offsetHeight * 1/2);
 
 	};
 
-	// Stop content moving
-	var stopMoving = function(e) {
+	/**
+	 * Stop content moving.
+	 *
+	 * @param {object}	Event object.
+	 * @return {void}
+	 */
+	var stopMoving = function () {
 
 		_config.scrollbar.className = "scrollbar";
 
 	};
 
-	// Do content move
-	var moveContent = function(e) {
+	/**
+	 * Do content move.
+	 *
+	 * @param {object}	Event object.
+	 * @return {void}
+	 */
+	var moveContent = function (event) {
 
-		e.preventDefault();
+		event.preventDefault();
 
 		if (_config.scrollbar.className === "scrollbar draggable") {
-			_config.scrollbar.top =  (e.clientY - _config.scrollbar.startDrag);
+			_config.scrollbar.top =  (event.clientY - _config.scrollbar.startDrag);
 
 			if (_config.scrollbar.top < 0) {
 				_config.scrollbar.top = 0;
@@ -245,5 +351,6 @@
 }));
 
 //APP.start('content');
-APP.viewPort();
-APP.toggle();
+APP.ViewPort();
+APP.Toggle();
+APP.LoadMore();

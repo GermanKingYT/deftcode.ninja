@@ -1,4 +1,5 @@
-deftcode.github.io
-==================
+deftcode.ninja
+==============
 
-~DEFTCODE
+Personal website Jekyll based template.
+
