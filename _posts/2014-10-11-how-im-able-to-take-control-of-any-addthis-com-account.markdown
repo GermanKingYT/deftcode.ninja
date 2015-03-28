@@ -27,7 +27,7 @@ User_Y = **ra-538ce0c960e04da4** Victim
 1. **User_X** visit the website of **User_Y** that use **Addthis plugin**  
 2. **User_X** inspect the page source code and search for profileid string **ra-538ce0c960e04da4** of **User_Y**
 3. **User_X login** into his Addthis.com account (**ra-5438e922313abc3a** was assigned to **User_X**)
-4. **User_X** make a **POST Request** to:  **<a href="https://www.addthis.com/meta-data/boost-create-widget" class="lighter-red" title="AddThis - boost-create-widget" target="_blank">https://www.addthis.com/meta-data/boost-create-widget</a>** \\
+4. **User_X** make a **POST Request** to:  **<a href="https://www.addthis.com/meta-data/boost-create-widget" title="AddThis - boost-create-widget" target="_blank">https://www.addthis.com/meta-data/boost-create-widget</a>** \\
 endpoint with **crafted header**  ([Live HTTP Headers](https://addons.mozilla.org/it/firefox/addon/live-http-headers/ "Live HTTP Headers")) using method `boost-create-widget`
 5. **Before User_X make a POST Request**, The **pub property** need to be changed with vulnerable site property value (ex. **(User_X) ra-5438e922313abc3a => (User_Y) ra-538ce0c960e04da4**)
 
