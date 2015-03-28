@@ -27,6 +27,8 @@ Found a Cross-site Scriping in Google Shopping Express Through It's Wallet data.
 * The payload was triggered
 * (However you could add directly the vector in https://wallet.google.com ;)
 
+<!--r34dm0r3-->
+
 ### Example demostration screen
 
 **Google Shopping Express Stored Cross-site Scriping**
