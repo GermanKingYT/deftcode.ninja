@@ -62,6 +62,20 @@ a small {
 	display: block;
 }
 
+a.lighter {
+	font-weight: normal;
+	color: #3cbae3;
+}
+
+a.lighter-red {
+	font-weight: normal;
+	color: #ec2a2a;
+}
+
+a.bold {
+	font-weight: bold;
+}
+
 blockquote {
 	border-left: 1px solid #e5e5e5;
 	margin: 0;

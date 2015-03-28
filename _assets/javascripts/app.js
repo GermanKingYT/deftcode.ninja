@@ -41,14 +41,14 @@
 	 */
 	var AddCrossEvent = function (ptr, event, funct) {
 
-		if (typeof ptr.addEventListener !== "undefined") {
+		if (typeof ptr.addEventListener !== 'undefined') {
 			ptr.addEventListener(event, funct, false);
 		}
-		else if (typeof ptr.attachEvent !== "undefined") {
+		else if (typeof ptr.attachEvent !== 'undefined') {
 			ptr.attachEvent('on' + event, funct);
 		}
 		else {
-			throw "Invalid event handler";
+			throw 'Invalid event handler';
 		}
 
 	};
@@ -62,13 +62,13 @@
 	exports.ViewPort = function () {
 
 		if (navigator.userAgent.match(/iPhone/i)) {
-			for (i = 0; i < metas.length; i++) {
-				if (metas[i].name == "viewport") {
-					metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+			for (i = 0; i < _metas.length; i++) {
+				if (_metas[i].name == 'viewport') {
+					_metas[i].content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';
 				}
 			}
 
-			AddCrossEvent(_d, "gesturestart", _ManageViewport);
+			AddCrossEvent(_d, 'gesturestart', _ManageViewport);
 		}
 
 	};
@@ -81,9 +81,9 @@
 	 */
 	var _ManageViewport = function () {
 
-		for (i = 0; i < metas.length; i++) {
-			if (metas[i].name == "viewport") {
-				metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+		for (i = 0; i < _metas.length; i++) {
+			if (_metas[i].name == 'viewport') {
+				_metas[i].content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
 			}
 		}
 
@@ -98,14 +98,14 @@
 	 */
 	exports.Toggle = function () {
 
-		if (_d.getElementById("toggle")) {
-			exports.t = _d.getElementById("toggle");
+		if (_d.getElementById('toggle')) {
+			exports.t = _d.getElementById('toggle');
 
 			if (!/curriculum-vitae/g.test(window.location.pathname)) {
-				AddCrossEvent(exports.t, "click", _ManageToggle);
+				AddCrossEvent(exports.t, 'click', _ManageToggle);
 			}
 			else {
-				AddCrossEvent(exports.t, "click", function() {
+				AddCrossEvent(exports.t, 'click', function() {
 					_d.location.replace(_d.location.origin);
 				});
 			}
@@ -124,21 +124,21 @@
 	 */
 	var _ManageToggle = function () {
 
-		var h = _d.getElementsByTagName("header")[0],
-			f = _d.getElementsByTagName("footer")[0],
-			s = _d.getElementsByTagName("section")[0];
+		var h = _d.getElementsByTagName('header')[0],
+			f = _d.getElementsByTagName('footer')[0],
+			s = _d.getElementsByTagName('section')[0];
 
-		if (exports.t.className == "standard-width") {
-			exports.t.className = "full-width";
-			h.style.display = f.style.display = "none";
-			s.style.float = "none";
-			s.style.width = "auto";
+		if (exports.t.className == 'standard-width') {
+			exports.t.className = 'full-width';
+			h.style.display = f.style.display = 'none';
+			s.style.float = 'none';
+			s.style.width = 'auto';
 		}
 		else {
-			exports.t.className = "standard-width";
-			h.removeAttribute("style");
-			f.removeAttribute("style");
-			s.removeAttribute("style");
+			exports.t.className = 'standard-width';
+			h.removeAttribute('style');
+			f.removeAttribute('style');
+			s.removeAttribute('style');
 		}
 
 	};
@@ -156,11 +156,11 @@
 			lc = _d.getElementById('load-more-content');
 
 		if (ll instanceof Object === true) {
-			AddCrossEvent(ll, "click", function(event) {
+			AddCrossEvent(ll, 'click', function(event) {
 				event.preventDefault();
 				fadeEffect(false, lc, 50);
-				lc.style.display = "inherit";
-				m.style.display = "none";
+				lc.style.display = 'inherit';
+				m.style.display = 'none';
 			});
 		}
 
@@ -190,7 +190,7 @@
 			}
 
 			element.style.opacity = o;
-			element.style.filter = 'alpha(opacity=' + o * 100 + ")";
+			element.style.filter = 'alpha(opacity=' + o * 100 + ')';
 			o += 0.1;
 	
 		}, speed);
@@ -216,29 +216,29 @@
 
 		// check for a valid element in DOM
 		if (_config.content instanceof Object !== true) {
-			throw "Error: element not found in DOM.";
+			throw 'Error: element not found in DOM.';
 		}
 
 		// create wrapper and wrap around content
-		_config.wrapper = document.createElement("div");
+		_config.wrapper = document.createElement('div');
 		_config.wrapper = _config.content.parentElement.insertBefore( _config.wrapper, _config.content);
 		_config.wrapper.appendChild(_config.content);
-		_config.wrapper.style.height = _config.content.offsetHeight + "px";
-		_config.wrapper.style.width  = (_config.content.offsetWidth + 10) + "px";
-		_config.wrapper.className    = "myScrollbar_wrapper";
+		_config.wrapper.style.height = _config.content.offsetHeight + 'px';
+		_config.wrapper.style.width  = (_config.content.offsetWidth + 10) + 'px';
+		_config.wrapper.className    = 'myScrollbar_wrapper';
 
 		// create scrollbar wrapper
-		_config.scrollbarW = document.createElement("div");
+		_config.scrollbarW = document.createElement('div');
 		_config.scrollbarW = _config.wrapper.appendChild(_config.scrollbarW);
-		_config.scrollbarW.className = "scrollbar_wrapper";
+		_config.scrollbarW.className = 'scrollbar_wrapper';
 
 		// create scrollbar
-		_config.scrollbar = document.createElement("div");
+		_config.scrollbar = document.createElement('div');
 		_config.scrollbar = _config.scrollbarW.appendChild(_config.scrollbar);
-		_config.scrollbar.className = "scrollbar";
+		_config.scrollbar.className = 'scrollbar';
 
 		// set size of scrollbar
-		_config.scrollbar.style.height = (_config.wrapper.offsetHeight * 1/3) + "px";
+		_config.scrollbar.style.height = (_config.wrapper.offsetHeight * 1/3) + 'px';
 
 		// for each pixel movement on scrollbar we have to move _config.ratio pixels in content
 		_config.ratio = ((_config.wrapper.scrollHeight - _config.scrollbarW.offsetHeight) /
@@ -246,10 +246,10 @@
 
 		// define events
 		_config.scrollbar.events = {
-			"mousedown":  enableMoving,
-			"mousemove":  moveContent,
-			"mouseup":    stopMoving,
-			"mouseleave": stopMoving,
+			'mousedown':  enableMoving,
+			'mousemove':  moveContent,
+			'mouseup':    stopMoving,
+			'mouseleave': stopMoving,
 			'mousewheel': eventScroll,
 			'DOMMouseScroll': eventScroll
 		};
@@ -279,10 +279,10 @@
 		}
 
 		if (event.wheelDelta == -120) {
-			_config.scrollbar.style.top = _config.scrollbar.top + 1 + "px";
+			_config.scrollbar.style.top = _config.scrollbar.top + 1 + 'px';
 		}
 		else {
-			_config.scrollbar.style.top = _config.scrollbar.top - 1 + "px";
+			_config.scrollbar.style.top = _config.scrollbar.top - 1 + 'px';
 		}
 
 		_config.content.style.top = -(_config.scrollbar.top * _config.ratio);
@@ -301,7 +301,7 @@
 
 		event.preventDefault();
 
-		_config.scrollbar.className = "scrollbar draggable";
+		_config.scrollbar.className = 'scrollbar draggable';
 		_config.scrollbar.startDrag = _config.scrollbar.startDrag || (event.clientY - event.layerY + _config.scrollbar.offsetHeight * 1/2);
 
 	};
@@ -314,7 +314,7 @@
 	 */
 	var stopMoving = function () {
 
-		_config.scrollbar.className = "scrollbar";
+		_config.scrollbar.className = 'scrollbar';
 
 	};
 
@@ -328,7 +328,7 @@
 
 		event.preventDefault();
 
-		if (_config.scrollbar.className === "scrollbar draggable") {
+		if (_config.scrollbar.className === 'scrollbar draggable') {
 			_config.scrollbar.top =  (event.clientY - _config.scrollbar.startDrag);
 
 			if (_config.scrollbar.top < 0) {
@@ -339,8 +339,8 @@
 				_config.scrollbar.top = _config.scrollbarW.offsetHeight - _config.scrollbar.offsetHeight;
 			}
 
-			_config.scrollbar.style.top = _config.scrollbar.top + "px";
-			_config.content.style.top = -(_config.scrollbar.top * _config.ratio) + "px";
+			_config.scrollbar.style.top = _config.scrollbar.top + 'px';
+			_config.content.style.top = -(_config.scrollbar.top * _config.ratio) + 'px';
 		}
 
 	};
