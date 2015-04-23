@@ -182,17 +182,26 @@
 			0: 1.0,
 			1: 0.0
 		}, o = inout,
-	
+		
 		timer = setInterval(function () {
 
-			if (o >= io_map[inout]) {
+			if (o >= io_map[inout] && inout == 0) {
+				clearInterval(timer);
+			}
+			else if (o <= io_map[inout] && inout == 1) {
 				clearInterval(timer);
 			}
 
 			element.style.opacity = o;
 			element.style.filter = 'alpha(opacity=' + o * 100 + ')';
-			o += 0.1;
-	
+
+			if (inout == 0) {
+				o += 0.1;
+			}
+			else {
+				o -= 0.1;
+			}
+
 		}, speed);
 
 	};
