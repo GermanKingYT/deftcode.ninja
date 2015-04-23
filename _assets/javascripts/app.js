@@ -158,7 +158,7 @@
 		if (ll instanceof Object === true) {
 			AddCrossEvent(ll, 'click', function(event) {
 				event.preventDefault();
-				fadeEffect(false, lc, 50);
+				fadeEffect(0, lc, 50);
 				lc.style.display = 'inherit';
 				m.style.display = 'none';
 			});
