@@ -9,7 +9,8 @@ permalink: curriculum-vitae/
 <div class="explain-alt">
 	<div class="what-container">
 		<div class="what-date">
-			February<br>– 2015
+			Mar – 2015<br>
+			– current
 		</div>
 		<div class="what-box">
 			<div class="what"><span class="progress">CURRENT</span> Security Consultant – Penetration Tester</div>
