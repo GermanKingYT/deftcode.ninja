@@ -302,12 +302,12 @@ permalink: curriculum-vitae/
 				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
 			</div>
 			<div>
-				<div class="square"></div><div class="square"></div><div class="square"></div>
-				<div class="square"></div><div class="square-light"></div><div class="square-nil"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
 			</div>
 			<div>
-				<div class="square-light"></div><div class="square-light"></div><div class="square-light"></div>
-				<div class="square-light"></div><div class="square-light"></div><div class="square-nil"></div>
+				<div class="square-dark"></div><div class="square-dark"></div><div class="square"></div>
+				<div class="square"></div><div class="square"></div><div class="square-nil"></div>
 			</div>
 		</div>
 		<div class="endorsement-container">
@@ -455,6 +455,12 @@ permalink: curriculum-vitae/
 
 <div id="projects" class="left-icon">
 	<div>Projects</div>
+</div>
+<div class="boxed">
+	<strong>vsaudit</strong> – The vsaudit is an opensource framework to perform attacks to general voip services. It allows to scan the whole network or single host engaging in the information gathering phase, besides it is able to search for most known vulnerabilities on the found alive hosts and then try to exploit them.
+	<div class="project-url">
+		<a href="https://github.com/sanvil/vsaudit" title="vsaudit - VOIP Security Audit Framework" target="_blank">https://github.com/sanvil/vsaudit</a>
+	</div>
 </div>
 <div class="boxed">
 	<strong>Zillioon v4</strong> – Zillioon is an owner Content Management System constantly developed by merged companies Mentefredda Srl and Prossima Isola Srl. It is a marketing and content management system, equipped with useful utility tools dedicated to hotels.

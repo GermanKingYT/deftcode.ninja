@@ -1,12 +1,13 @@
 # DEFTCODE YML Settings
 
-port: 80
+port: 8000
 
 title: DEFTCODE
 email: eurialo@deftcode.ninja
 description: security.. coding / beer / coffee
 baseurl: ""
-url: "http://deftcode.ninja"
+#url: "http://deftcode.ninja"
+url: "http://localhost:8000"
 
 google_username: federicofazzi
 google_url: "https://plus.google.com/+FedericoFazzi"
