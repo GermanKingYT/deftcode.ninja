@@ -450,7 +450,7 @@ permalink: curriculum-vitae/
 	<div>Interests</div>
 </div>
 <div class="boxed">
-	Information and Communications Technology, Information Security, Coding, System Administration, Penetration(BlackBox) Testing, Vulnerability Assestment and Mitigation, Reseach, Hardening, Audits, Exploits, Cryptocurrency(Bitcoin) and Problem Analysis/Solving.
+	Information and Communications Technology, Information Security, Programming, System Administration, Penetration (BlackBox) Testing, Vulnerability Assessment and Mitigation (VAM), Reseach, Hardening, Audits, Exploits, Cryptocurrency (Bitcoin) and Problem Analysis/Solving.
 </div>
 
 <div id="projects" class="left-icon">
