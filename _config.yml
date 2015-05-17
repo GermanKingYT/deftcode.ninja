@@ -8,17 +8,17 @@ description: security.. coding / beer / coffee
 baseurl: ""
 url: "http://deftcode.ninja"
 
-google_username: federicofazzi
-google_url: "https://plus.google.com/+FedericoFazzi"
-
-twitter_username: federicofazzi
-twitter_url: "https://twitter.com/federicofazzi"
-
 github_username:  eurialo
 github_url: "https://github.com/eurialo"
 
 linkedin_username:  eurialo
 linkedin_url: "https://linkedin.com/in/eurialo"
+
+google_username: federicofazzi
+google_url: "https://plus.google.com/+FedericoFazzi"
+
+twitter_username: federicofazzi
+twitter_url: "https://twitter.com/federicofazzi"
 
 markdown: kramdown
 

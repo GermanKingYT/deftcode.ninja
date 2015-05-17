@@ -16,7 +16,7 @@ If you need to <code>contact me</code>, mail me directly at <a href="mailto:fede
 
 This is a static website run via [Jekyll](http://jekyllrb.com/ "Jekyll"), a blog-aware, static site generator written in Ruby.
 If you like this responsive theme that I've made, you can find out sources in Github at [deftcode.ninja](https://github.com/eurialo/deftcode.ninja "deftcode.ninja").
-All **contents** in this website are licensed under the **Terms** of the <a href="{{ site.url }}/license"><strong>MIT License</strong></a>.
+All **contents** in this website are licensed under the terms of the <a href="{{ site.url }}/license"><strong>MIT License</strong></a>.
 
 ## GnuPG Key
 

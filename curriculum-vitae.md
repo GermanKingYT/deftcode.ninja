@@ -456,33 +456,40 @@ permalink: curriculum-vitae/
 <div id="projects" class="left-icon">
 	<div>Projects</div>
 </div>
+<!--<div class="boxed">
+	<a href="https://github.com/eurialo/verbena" title="Verbena - MVC Security Framework" target="_blank">Verbena</a> – Verbena is a lightweight mvc based framework focused on security. <br>
+	It's a flexible framework that allows you to fastly create secure applications, it can be extended without the complex user's interactions. The architecture is based on the famous pattern MVC (Model, View, Control) and all things are focused on the safety of the application itself.
+	<div class="project-url">
+		<a href="https://github.com/eurialo/verbena" title="Verbena - MVC Security Framework" target="_blank">https://github.com/eurialo/verbena</a>
+	</div>
+</div>-->
 <div class="boxed">
-	<strong>vsaudit</strong> – The vsaudit is an opensource framework to perform attacks to general voip services. It allows to scan the whole network or single host engaging in the information gathering phase, besides it is able to search for most known vulnerabilities on the found alive hosts and then try to exploit them.
+	<a href="https://github.com/sanvil/vsaudit" title="vsaudit - VOIP Security Audit Framework" target="_blank">vsaudit</a> – The vsaudit is an opensource framework to perform attacks to general voip services. It allows to scan the whole network or single host engaging in the information gathering phase, besides it is able to search for most known vulnerabilities on the found alive hosts and then try to exploit them.
 	<div class="project-url">
 		<a href="https://github.com/sanvil/vsaudit" title="vsaudit - VOIP Security Audit Framework" target="_blank">https://github.com/sanvil/vsaudit</a>
 	</div>
 </div>
 <div class="boxed">
-	<strong>Zillioon v4</strong> – Zillioon is an owner Content Management System constantly developed by merged companies Mentefredda Srl and Prossima Isola Srl. It is a marketing and content management system, equipped with useful utility tools dedicated to hotels.
+	<a href="http://www.mentefredda.it" title="Mentefredda Srl - Zillioon v4" target="_blank">Zillioon v4</a> – Zillioon is an owner Content Management System constantly developed by merged companies Mentefredda Srl and Prossima Isola Srl. It is a marketing and content management system, equipped with useful utility tools dedicated to hotels.
 	<div class="project-url">
 		<a href="http://www.mentefredda.it" title="Mentefredda Srl - Zillioon v4" target="_blank">http://www.mentefredda.it</a>
 	</div>
 </div>
 <div class="boxed">
-	<strong>Lightaidra</strong> – Lightidra is a mass-tool commanded by irc that allows scanning and exploiting routers for make BOTNET (in rx-bot style), in addition to this, with aidra you can perform some attacks with tcp flood.
+	<a href="https://github.com/eurialo/lightaidra" title="Lightaidra" target="_blank">Lightaidra</a> – Lightidra is a mass-tool commanded by irc that allows scanning and exploiting routers for make BOTNET (in rx-bot style), in addition to this, with aidra you can perform some attacks with tcp flood.
 	<div class="project-url">
 		<a href="https://github.com/eurialo/lightaidra" title="Lightaidra" target="_blank">https://github.com/eurialo/lightaidra</a>
 	</div>
 </div>
 <div class="boxed">
-	<strong>RapidTOR</strong> – Rapidtor is a timedelayed identity changer for TOR network, that allows you to change your tor node connection every X seconds.
+	<a href="https://github.com/eurialo/rapidtor" title="RapidTOR" target="_blank">RapidTOR</a> – It's a timedelayed identity changer for TOR network, that allows you to change your tor node connection every X seconds.
 	<div class="project-url">
 		<a href="https://github.com/eurialo/rapidtor" title="RapidTOR" target="_blank">https://github.com/eurialo/rapidtor</a>
 	</div>
 </div>
 <div class="boxed">
-	<strong>OXSSH2</strong> – OXSSH is a tiny SSH version 2 interactive password bruteforcer that use a wordlist as source.
+	<a href="https://github.com/eurialo/oxssh-v2" title="GitHub - OXSSH2" target="_blank">oxssh-v2</a> – A tiny SSH version 2 interactive password bruteforcer that use a wordlist as source.
 	<div class="project-url">
-		<a href="https://github.com/eurialo/oxssh2" title="GitHub - OXSSH2" target="_blank">https://github.com/eurialo/oxssh2</a>
+		<a href="https://github.com/eurialo/oxssh-v2" title="GitHub - OXSSH2" target="_blank">https://github.com/eurialo/oxssh-v2</a>
 	</div>
 </div>
