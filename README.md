@@ -12,7 +12,7 @@ To start using the template you can serve It locally or with apache2, with Jekyl
 
 Or with apache2 you must build the jekyll project: 
 
-	deftcode ~ $ jekyll build
+	deftcode ~ $ jekyll build -s /var/www/deftcode -d /var/www/deftcode/_site
 	Configuration file: /var/www/deftcode/_config.yml
 	Source: /var/www/deftcode
 	Destination: /var/www/deftcode/_site
