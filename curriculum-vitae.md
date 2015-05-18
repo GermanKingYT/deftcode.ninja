@@ -456,13 +456,13 @@ permalink: curriculum-vitae/
 <div id="projects" class="left-icon">
 	<div>Projects</div>
 </div>
-<!--<div class="boxed">
+<div class="boxed">
 	<a href="https://github.com/eurialo/verbena" title="Verbena - MVC Security Framework" target="_blank">Verbena</a> – Verbena is a lightweight mvc based framework focused on security. <br>
 	It's a flexible framework that allows you to fastly create secure applications, it can be extended without the complex user's interactions. The architecture is based on the famous pattern MVC (Model, View, Control) and all things are focused on the safety of the application itself.
 	<div class="project-url">
 		<a href="https://github.com/eurialo/verbena" title="Verbena - MVC Security Framework" target="_blank">https://github.com/eurialo/verbena</a>
 	</div>
-</div>-->
+</div>
 <div class="boxed">
 	<a href="https://github.com/sanvil/vsaudit" title="vsaudit - VOIP Security Audit Framework" target="_blank">vsaudit</a> – The vsaudit is an opensource framework to perform attacks to general voip services. It allows to scan the whole network or single host engaging in the information gathering phase, besides it is able to search for most known vulnerabilities on the found alive hosts and then try to exploit them.
 	<div class="project-url">
