@@ -20,8 +20,8 @@ deftcode ~ $ ruby verbind.rb deftcode.local
 
 ### References
 
-* RFC-1035: http://tools.ietf.org/html/rfc1035
-* DNS Protocol: http://www.networksorcery.com/enp/protocol/dns.htm
+* RFC-1035: [http://tools.ietf.org/html/rfc1035](http://tools.ietf.org/html/rfc1035/, "RFC-1035")
+* DNS Protocol: [http://www.networksorcery.com/enp/protocol/dns.htm](http://www.networksorcery.com/enp/protocol/dns.htm, "DNS Protocol")
 
 <!--r34dm0r3-->
 
