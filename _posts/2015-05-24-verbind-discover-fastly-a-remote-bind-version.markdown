@@ -8,7 +8,7 @@ permalink: post/verbind-discover-fastly-a-remote-bind-version/
 
 ### Description
 
-**Verbind** is a `case-study tool` to retrieve the `version` of remote **bind** service by executing a simple `dns query` request by following the `rfc` standard.
+**Verbind** is a `case-study tool` to retrieve the `version` of remote **bind** service by executing a simple `dns query` request by following the **rfc** standard.
 
 ### Howto
 
@@ -20,8 +20,8 @@ deftcode ~ $ ruby verbind.rb deftcode.local
 
 ### References
 
-* RFC-1035: [http://tools.ietf.org/html/rfc1035](http://tools.ietf.org/html/rfc1035/, "RFC-1035")
-* DNS Protocol: [http://www.networksorcery.com/enp/protocol/dns.htm](http://www.networksorcery.com/enp/protocol/dns.htm, "DNS Protocol")
+* RFC-1035: <a href="http://tools.ietf.org/html/rfc1035/" title="RFC-1035" target="_blank">http://tools.ietf.org/html/rfc1035/</a>
+* DNS Protocol: <a href="http://www.networksorcery.com/enp/protocol/dns.htm" title="DNS Protocol" target="_blank">http://www.networksorcery.com/enp/protocol/dns.htm</a>
 
 <!--r34dm0r3-->
 
