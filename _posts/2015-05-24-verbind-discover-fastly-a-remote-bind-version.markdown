@@ -8,7 +8,7 @@ permalink: post/verbind-discover-fastly-a-remote-bind-version/
 
 ### Description
 
-**Verbind* is a `case-study tool` to retrieve the `version` of remote **bind** service by executing a simple `dns query` request by following the `rfc` standard.
+**Verbind** is a `case-study tool` to retrieve the `version` of remote **bind** service by executing a simple `dns query` request by following the `rfc` standard.
 
 ### Howto
 
