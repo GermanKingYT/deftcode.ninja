@@ -2,7 +2,7 @@
 layout: post
 title:  "vsaudit - VOIP Security Audit Framework"
 date:   2015-05-11 20:50:00
-categories: security
+categories: security coding
 permalink: post/vsaudit-voip-security-audit-framework/
 ---
 

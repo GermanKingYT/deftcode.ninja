@@ -2,7 +2,7 @@
 layout: post
 title:  "Tiny PAM Authentication Module Backdoor"
 date:   2012-04-08 18:22:00
-categories: coding
+categories: coding security
 permalink: post/tiny-pam-authentication-module-backdoor/
 ---
 

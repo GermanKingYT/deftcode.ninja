@@ -2,7 +2,7 @@
 layout: post
 title:  "Non Alphanumeric Javascript Coding - Quick Reference"
 date:   2014-10-08 00:27:33
-categories: coding
+categories: coding security
 permalink: post/non-alphanumeric-javascript-coding/
 ---
 

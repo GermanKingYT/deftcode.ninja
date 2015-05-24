@@ -2,7 +2,7 @@
 layout: post
 title:  "OxSSH2 – Another Tiny SSH v2 Password Bruteforcer"
 date:   2012-09-27 16:24:03
-categories: hacking
+categories: coding security
 permalink: post/oxssh2-another-tiny-ssh-v2-password-bruteforcer/
 ---
 

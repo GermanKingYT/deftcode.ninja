@@ -2,7 +2,7 @@
 layout: post
 title:  "LightAidra – IRC Based Mass Router Scanner/Pwner"
 date:   2012-12-12 20:04:21
-categories: hacking
+categories: coding security
 permalink: post/lightaidra-irc-based-mass-router-scanner-pwner/
 ---
 
