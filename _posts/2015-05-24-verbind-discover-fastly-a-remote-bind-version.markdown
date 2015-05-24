@@ -12,11 +12,11 @@ permalink: post/verbind-discover-fastly-a-remote-bind-version/
 
 ### Howto
 
-```bash
+{% highlight bash %}
 deftcode ~ $ ruby verbind.rb deftcode.local
 > Requesting for version.bind to address: deftcode.local
 + Bind version found: 9.8.4-rpz2+rl005.12-P1
-```
+{% endhighlight %}
 
 ### References
 
