@@ -37,19 +37,10 @@ layout: default
 			{% capture year %}{{currentyear}}{% endcapture %}
 		{% endif %}
 		<li>
-			<!--{% if post.url contains 'yahoo-finance' %}
-				<a class="post-link" href="#" title="{{ post.title }}">
-					<h2><span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span> – {{ post.title }} - (soon..)</h2>
-				</a>
-			{% else %}
-				<a class="post-link" href="{{ post.url | prepend: site.url }}" title="{{ post.title }}">
-					<h2><span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span> – {{ post.title }}</h2>
-				</a>
-			{% endif %}-->
 			<a class="post-link" href="{{ post.url | prepend: site.url }}" title="{{ post.title }}">
 				<h2><span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span> – {{ post.title }}</h2>
 			</a>
-			<small>CATEGORY: {{ post.categories | join: ', ' | upcase }}</small>
+			<small>CATEGORIES: {{ post.categories | join: ' - ' | upcase }}</small>
 		</li>
 	{% endfor %}
 </ul>

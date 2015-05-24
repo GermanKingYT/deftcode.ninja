@@ -27,7 +27,7 @@ permalink: security/
 				<a class="post-link" href="{{ post.url | prepend: site.url }}" title="{{ post.title }}">
 					<h2><span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span> – {{ post.title }}</h2>
 				</a>
-				<small>CATEGORY: {{ post.categories | join: ', ' | upcase }}</small>
+				<small>CATEGORIES: {{ post.categories | join: ' - ' | upcase }}</small>
 			</li>
 		{% endif %}
 	{% endfor %}
