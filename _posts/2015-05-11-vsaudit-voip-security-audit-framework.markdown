@@ -67,7 +67,6 @@ deftcode vsaudit $ ruby vsaudit.rb
 - Display the help message
 - Quit from the framework
 
-<!--r34dm0r3-->
 
 ### Environment commands
 
