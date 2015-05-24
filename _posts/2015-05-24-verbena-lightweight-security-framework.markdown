@@ -19,17 +19,17 @@ Any kind of advice or contributions are welcome!
 
 ### Howto
 
-Follow this link to see verbena in action: [http://verbena.deftcode.ninja](http://verbena.deftcode.ninja, "Verbena")
+Follow this link to see verbena in action: <a href="http://verbena.deftcode.ninja/" title="Verbena Reference" target="_blank">http://verbena.deftcode.ninja/</a>
 
 <!--r34dm0r3-->
 
-### Bug Report
+### Contribution and Bug report
 
+If you want to contribute to the project, fork It and then contact me by email!
 Report bugs at [eurialo@deftcode.ninja](mailto:eurialo@deftcode.ninja)
 
-### Source and Reference
+### Source
 
 <span id="sources-list">
-[Verbena Reference](http://verbena.deftcode.ninja/ "Verbena")
 [View on GitHub](https://github.com/eurialo/verbena/ "Verbena GitHub")
 </span>
