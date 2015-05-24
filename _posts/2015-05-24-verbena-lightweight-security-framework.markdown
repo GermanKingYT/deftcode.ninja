@@ -2,7 +2,7 @@
 layout: post
 title:  "Verbena – A lightweight security framework"
 date:   2015-05-24 15:30:00
-categories: coding, security
+categories: security coding
 permalink: post/verbena-lightweight-security-framework/
 ---
 
@@ -20,8 +20,6 @@ Any kind of advice or contributions are welcome!
 ### Howto
 
 Follow this link to see verbena in action: <a href="http://verbena.deftcode.ninja/" title="Verbena Reference" target="_blank">http://verbena.deftcode.ninja/</a>
-
-<!--r34dm0r3-->
 
 ### Contribution and Bug report
 
