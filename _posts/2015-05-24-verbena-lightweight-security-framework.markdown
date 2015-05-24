@@ -25,8 +25,8 @@ Follow this link to see verbena in action: <a href="http://verbena.deftcode.ninj
 
 ### Contribution and Bug report
 
-If you want to contribute to the project, fork It and then contact me by email!
-Report bugs at [eurialo@deftcode.ninja](mailto:eurialo@deftcode.ninja)
+* If you want to contribute to the project, fork It and then contact me by email!
+* Report bugs at [eurialo@deftcode.ninja](mailto:eurialo@deftcode.ninja)
 
 ### Source
 
