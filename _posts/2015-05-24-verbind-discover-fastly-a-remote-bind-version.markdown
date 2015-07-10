@@ -23,8 +23,6 @@ deftcode ~ $ ruby verbind.rb deftcode.local
 * RFC-1035: <a href="http://tools.ietf.org/html/rfc1035/" title="RFC-1035" target="_blank">http://tools.ietf.org/html/rfc1035/</a>
 * DNS Protocol: <a href="http://www.networksorcery.com/enp/protocol/dns.htm" title="DNS Protocol" target="_blank">http://www.networksorcery.com/enp/protocol/dns.htm</a>
 
-<!--r34dm0r3-->
-
 ### Source
 
 <span id="sources-list">

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Prestashop 1.6.0.6 DOM based Cross-site Scripting"
+title:  "Prestashop 1.6.0.6 - DOM based Cross-site Scripting"
 date:   2014-06-10 12:32:18
 categories: security
 permalink: post/prestashop-dom-based-xss/
@@ -43,7 +43,7 @@ function searchLocations()
 }
 {% endhighlight %}
 
-The variable `address` is not properly sanitized, therefore a **Cross-site scripting** can be executed by injecting a simple vector like that:
+The variable `address` is not properly sanitized, therefore a **Cross-site Scripting** can be executed by injecting a simple vector like that:
 
 {% highlight js %}
 <input value=alert(1) autofocus>

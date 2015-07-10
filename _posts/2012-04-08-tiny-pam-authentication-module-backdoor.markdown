@@ -7,7 +7,7 @@ permalink: post/tiny-pam-authentication-module-backdoor/
 ---
 
 This trick explains you how to create a **PAM module backdoor** that allow you to login in any account of system with your own password.
-s
+
 ### Example of pam_bd.so module as backdoor
 
 {% highlight c %}
