@@ -93,10 +93,12 @@ code, pre {
 }
 
 p > code {
-	/*background: #f9f9f9;*/
-	background: url(/images/blueprint-dark.png) top center;
-	border: 1px #eee solid;
-	padding: 1px 5px;
+    background: #282828;
+    color: #d7ff7a;
+    font-size: 12px;
+    border: 1px #222 solid;
+    padding: 2px 5px;
+    padding-bottom: 2px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
@@ -242,11 +244,13 @@ section {
 
 	.post-meta {
 		display: inline-block;
-		font-weight: 900;
+		background: #282828;
+		color: #fff;
 		font-size: 12px;
-		padding: 1px 5px;
-		border-radius: 3px;
-		border: 1px #eee solid;
+		border: 1px #222 solid;
+		padding: 2px 5px;
+		padding-bottom: 2px;
+		font-weight: bold;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		-ms-border-radius: 3px;
