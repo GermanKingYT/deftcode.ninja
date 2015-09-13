@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>LightAidra – IRC Based Mass Router Scanner/Pwner</title>
+	<meta name="description" content="">
+	<meta name="author" content="Federico Fazzi">
+	<link rel="stylesheet" href="/assets/app-ed7e8ebec25086e3a78effcb1d227fb9.css">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+	<link rel="canonical" href="http://dev.deftcode.ninja/post/lightaidra-irc-based-mass-router-scanner-pwner/">
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-55598198-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+	<button id="toggle" class="standard-width" type="button" data-toggle="collapse">
+		<span class="toggle-line"></span>
+		<span class="toggle-line"></span>
+		<span class="toggle-line"></span>
+	</button>
+	<div class="wrapper">
+		<header>
+	<h1>DEFTCODE<sup>( 2 )</sup></h1>
+
+	<ul id="navbar">
+		<li><a href="http://dev.deftcode.ninja" title="Posts">Posts</a></li>
+		<li><a href="http://dev.deftcode.ninja/security" title="Security">Security</a></li>
+		<li><a href="http://dev.deftcode.ninja/about" title="About">About</a></li>
+	</ul>
+
+	<ul id="social" class="apicos-social-sport">
+		
+		<li><a href="https://github.com/eurialo" title="Github" target="_blank"><span class="apico apico-github-square"></span></a></li>
+		
+		
+		<li><a href="https://linkedin.com/in/eurialo" title="Linkedin" target="_blank"><span class="apico apico-linkedin-square"></span></a></li>
+		
+		
+		<li><a href="https://twitter.com/federicofazzi" title="Twitter" target="_blank"><span class="apico apico-twitter-square"></span></a></li>
+		
+		
+		<li><a href="https://plus.google.com/+FedericoFazzi" title="Google+" target="_blank"><span class="apico apico-google-plus-square"></span></a></li>
+		
+		<li><a href="/feed.xml" title="Feed RSS" target="_blank"><span class="apico apico-rss-square"></span></a></li>
+	</ul>
+	<p>
+		<small><a href="https://pgp.mit.edu/pks/lookup?search=0x6D378CAF&op=index&exact=on" title="MIT PGP Public Key Server - 0x6D378CAF" target="_blank">GPG - 2048R/6D378CAF</a></small>
+	</p>
+</header>
+		<section>
+		<h1 class="post-title">LightAidra – IRC Based Mass Router Scanner/Pwner</h1>
+<p class="post-meta">RELEASED IN WEDNESDAY 12, DECEMBER, 2012</p>
+
+<h3 id="description">Description</h3>
+
+<p><code>Lightidra</code> is a mass-tool commanded by IRC that allows scanning and exploiting routers for make <code>BOTNET</code> (in <code>rx-bot</code> style), in addition to this, with aidra you can perform some <code>attacks</code> with tcp flood.</p>
+
+<h3 id="configuration">Configuration</h3>
+
+<p>The installation is just a little complicated, but not hard!
+First download or git <code>lightaidra-[VERSION].tar.gz</code></p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>tar zxvf lightaidra*
+<span class="nv">$ </span><span class="nb">cd </span>lightaidra*
+<span class="nv">$ </span>vi include/config.h</code></pre></div>
+
+<p>The <strong>REFERENCE_HTTP</strong> in <code>config.h</code> must be the server where you will upload the binaries
+<code>(mips*, arm, ppc, sh4)</code> and the getbinaries.sh shell script.</p>
+
+<p><strong>IMPORTANT:</strong> If you will change the names of binaries (ex. mips filename become mym1ps) you will need to update the <code>Makefile</code> and <code>getbinaries.sh</code> too with the new names!</p>
+
+<h3 id="building">Building</h3>
+
+<p><strong>Let’s build local version</strong></p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>make x86_32 <span class="o">(</span><span class="k">for</span> 32bit<span class="o">)</span>
+<span class="nv">$ </span>make x86_64 <span class="o">(</span><span class="k">for</span> 64bit<span class="o">)</span>
+<span class="c"># ./bin/x86_64</span></code></pre></div>
+
+<p><strong>Now build for the other archs</strong></p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>make mipsel mips arm ppc superh</code></pre></div>
+
+<h3 id="upload-and-join-irc">Upload and Join IRC</h3>
+
+<p>Start your <code>anonymous webserver</code> and upload the generated <code>binaries</code> and <code>getbinaries.sh</code> script.
+Connect to the IRC server and start pwn!</p>
+
+<h3 id="bugs">Bugs</h3>
+
+<p>If you find bugs (which is quite likely), please submit them to
+<a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#101;&#117;&#114;&#105;&#097;&#108;&#111;&#064;&#100;&#101;&#102;&#116;&#099;&#111;&#100;&#101;&#046;&#110;&#105;&#110;&#106;&#097;">&#101;&#117;&#114;&#105;&#097;&#108;&#111;&#064;&#100;&#101;&#102;&#116;&#099;&#111;&#100;&#101;&#046;&#110;&#105;&#110;&#106;&#097;</a> with specific information, such as your
+command-line, the nature of the bug and other.</p>
+
+<h3 id="sources">Sources</h3>
+
+<p><span id="sources-list">
+<a href="https://github.com/eurialo/lightaidra/" title="GitHub LighAidra">View on GitHub</a>
+<a href="https://github.com/eurialo/lightaidra/" title="Download LighAidra">Direct Download</a>
+</span></p>
+
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-538ce0c960e04da4" async></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_sharing_toolbox"></div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	var disqus_shortname = 'deftcode'; // required: replace example with your forum shortname
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+		</section>
+		<footer>
+	<p><small>2015 – <b><a href="http://en.wikipedia.org/wiki/MIT_License" title="Wikipedia.org - MIT License" target="_blank">MIT License</a></b></small></p>
+</footer>
+<script src="/assets/app-37906461198b3aa3d672db7880cb695d.js"></script>
+	</div>
+</body>
+</html>

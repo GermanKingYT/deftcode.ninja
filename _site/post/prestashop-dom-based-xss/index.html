@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>Prestashop 1.6.0.6 - DOM based Cross-site Scripting</title>
+	<meta name="description" content="">
+	<meta name="author" content="Federico Fazzi">
+	<link rel="stylesheet" href="/assets/app-ed7e8ebec25086e3a78effcb1d227fb9.css">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+	<link rel="alternate" type="application/rss+xml" title="" href="/feed.xml">
+	<link rel="canonical" href="http://dev.deftcode.ninja/post/prestashop-dom-based-xss/">
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-55598198-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+	<button id="toggle" class="standard-width" type="button" data-toggle="collapse">
+		<span class="toggle-line"></span>
+		<span class="toggle-line"></span>
+		<span class="toggle-line"></span>
+	</button>
+	<div class="wrapper">
+		<header>
+	<h1>DEFTCODE<sup>( 2 )</sup></h1>
+
+	<ul id="navbar">
+		<li><a href="http://dev.deftcode.ninja" title="Posts">Posts</a></li>
+		<li><a href="http://dev.deftcode.ninja/security" title="Security">Security</a></li>
+		<li><a href="http://dev.deftcode.ninja/about" title="About">About</a></li>
+	</ul>
+
+	<ul id="social" class="apicos-social-sport">
+		
+		<li><a href="https://github.com/eurialo" title="Github" target="_blank"><span class="apico apico-github-square"></span></a></li>
+		
+		
+		<li><a href="https://linkedin.com/in/eurialo" title="Linkedin" target="_blank"><span class="apico apico-linkedin-square"></span></a></li>
+		
+		
+		<li><a href="https://twitter.com/federicofazzi" title="Twitter" target="_blank"><span class="apico apico-twitter-square"></span></a></li>
+		
+		
+		<li><a href="https://plus.google.com/+FedericoFazzi" title="Google+" target="_blank"><span class="apico apico-google-plus-square"></span></a></li>
+		
+		<li><a href="/feed.xml" title="Feed RSS" target="_blank"><span class="apico apico-rss-square"></span></a></li>
+	</ul>
+	<p>
+		<small><a href="https://pgp.mit.edu/pks/lookup?search=0x6D378CAF&op=index&exact=on" title="MIT PGP Public Key Server - 0x6D378CAF" target="_blank">GPG - 2048R/6D378CAF</a></small>
+	</p>
+</header>
+		<section>
+		<h1 class="post-title">Prestashop 1.6.0.6 - DOM based Cross-site Scripting</h1>
+<p class="post-meta">RELEASED IN TUESDAY 10, JUNE, 2014</p>
+
+<p>The version 1.6.0.6 of Prestashop is vulnerable to <code>DOM Based XSS</code>, the page location at
+<code>/index.php?controller=stores</code> show you the locations of the stores, this feature can be enabled from the admin panel by <code>Preferences / Store Contacts</code>.</p>
+
+<h3 id="vulnerable-function-is-stored-in-the-core-js-cached-version-see-storesjs">Vulnerable function is stored in the Core JS cached version (see stores.js)</h3>
+
+<p><code>snippet:</code></p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">searchLocations</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#stores_loader&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+  <span class="kd">var</span> <span class="nx">address</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;addressInput&#39;</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">geocoder</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">Geocoder</span><span class="p">();</span>
+  <span class="nx">geocoder</span><span class="p">.</span><span class="nx">geocode</span><span class="p">({</span><span class="nx">address</span><span class="o">:</span> <span class="nx">address</span><span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">results</span><span class="p">,</span> <span class="nx">status</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">status</span> <span class="o">===</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">GeocoderStatus</span><span class="p">.</span><span class="nx">OK</span><span class="p">)</span>
+      <span class="nx">searchLocationsNear</span><span class="p">(</span><span class="nx">results</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">geometry</span><span class="p">.</span><span class="nx">location</span><span class="p">);</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="o">!!</span><span class="nx">$</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">fancybox</span><span class="p">)</span>
+        <span class="nx">$</span><span class="p">.</span><span class="nx">fancybox</span><span class="p">.</span><span class="nx">open</span><span class="p">([</span>
+        <span class="p">{</span>
+          <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;inline&#39;</span><span class="p">,</span>
+          <span class="nx">autoScale</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+          <span class="nx">minHeight</span><span class="o">:</span> <span class="mi">30</span><span class="p">,</span>
+          <span class="nx">content</span><span class="o">:</span> <span class="s1">&#39;&lt;p class=&quot;fancybox-error&quot;&gt;&#39;</span> <span class="o">+</span> <span class="nx">address</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nx">translation_6</span> <span class="o">+</span> <span class="s1">&#39;&lt;/p&gt;&#39;</span>
+        <span class="p">}</span>
+        <span class="p">],</span> <span class="p">{</span>
+          <span class="nx">padding</span><span class="o">:</span> <span class="mi">0</span>
+        <span class="p">});</span>
+      <span class="k">else</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="nx">address</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="nx">translation_6</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#stores_loader&#39;</span><span class="p">).</span><span class="nx">hide</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="p">}</span></code></pre></div>
+
+<p>The variable <code>address</code> is not properly sanitized, therefore a <strong>Cross-site Scripting</strong> can be executed by injecting a simple vector like that:</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">input</span> <span class="nx">value</span><span class="o">=</span><span class="nx">alert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nx">autofocus</span><span class="o">&gt;</span></code></pre></div>
+
+<h3 id="example-demostration-screen-in-prestashop-online-demo">Example demostration screen in Prestashop online Demo</h3>
+
+<p><a href="/images/security/responsible-disclosure/prestashop-xss.png"><img src="/images/security/responsible-disclosure/prestashop-xss.png" alt="Prestashop Demo XSS" /></a></p>
+
+<h3 id="disclosure">Disclosure:</h3>
+
+<ul>
+  <li><strong>08/06/2014</strong> – Report to Prestashop Bugtraq</li>
+  <li><strong>09/06/2014</strong> – Fixed by commit <a href="https://github.com/PrestaShop/PrestaShop/commit/29d8cf1576cadd321d131f33735c4635759c10f5" title="GitHub Commit-ID">29d8cf1576cadd321d131f33735c4635759c10f5</a></li>
+  <li><strong>10/06/2014</strong> – Public disclosure</li>
+</ul>
+
+
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-538ce0c960e04da4" async></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_sharing_toolbox"></div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	var disqus_shortname = 'deftcode'; // required: replace example with your forum shortname
+
+	/* * * DON'T EDIT BELOW THIS LINE * * */
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+		</section>
+		<footer>
+	<p><small>2015 – <b><a href="http://en.wikipedia.org/wiki/MIT_License" title="Wikipedia.org - MIT License" target="_blank">MIT License</a></b></small></p>
+</footer>
+<script src="/assets/app-37906461198b3aa3d672db7880cb695d.js"></script>
+	</div>
+</body>
+</html>
