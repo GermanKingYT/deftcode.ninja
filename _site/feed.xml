@@ -3,10 +3,10 @@
 	<channel>
 		<title>DEFTCODE</title>
 		<description>security.. coding / beer / coffee</description>
-		<link>http://dev.deftcode.ninja/</link>
-		<atom:link href="http://dev.deftcode.ninja/feed.xml" rel="self" type="application/rss+xml" />
-		<pubDate>Sun, 13 Sep 2015 04:48:39 +0200</pubDate>
-		<lastBuildDate>Sun, 13 Sep 2015 04:48:39 +0200</lastBuildDate>
+		<link>http://deftcode.ninja/</link>
+		<atom:link href="http://deftcode.ninja/feed.xml" rel="self" type="application/rss+xml" />
+		<pubDate>Sun, 13 Sep 2015 05:13:16 +0200</pubDate>
+		<lastBuildDate>Sun, 13 Sep 2015 05:13:16 +0200</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
 		
 			<item>
@@ -66,8 +66,8 @@
 
 </description>
 				<pubDate>Sat, 18 Jul 2015 02:00:00 +0200</pubDate>
-				<link>http://dev.deftcode.ninja/post/CVE-2015-xxxx-snorby-ids-ui-stored-cross-site-scripting/</link>
-				<guid isPermaLink="true">http://dev.deftcode.ninja/post/CVE-2015-xxxx-snorby-ids-ui-stored-cross-site-scripting/</guid>
+				<link>http://deftcode.ninja/post/CVE-2015-xxxx-snorby-ids-ui-stored-cross-site-scripting/</link>
+				<guid isPermaLink="true">http://deftcode.ninja/post/CVE-2015-xxxx-snorby-ids-ui-stored-cross-site-scripting/</guid>
 				
 				
 				<category>security</category>
@@ -141,8 +141,8 @@
 
 </description>
 				<pubDate>Wed, 15 Jul 2015 02:00:00 +0200</pubDate>
-				<link>http://dev.deftcode.ninja/post/CVE-2015-5460-snorby-ids-ui-stored-cross-site-scripting/</link>
-				<guid isPermaLink="true">http://dev.deftcode.ninja/post/CVE-2015-5460-snorby-ids-ui-stored-cross-site-scripting/</guid>
+				<link>http://deftcode.ninja/post/CVE-2015-5460-snorby-ids-ui-stored-cross-site-scripting/</link>
+				<guid isPermaLink="true">http://deftcode.ninja/post/CVE-2015-5460-snorby-ids-ui-stored-cross-site-scripting/</guid>
 				
 				
 				<category>security</category>
@@ -177,8 +177,8 @@
 &lt;/span&gt;&lt;/p&gt;
 </description>
 				<pubDate>Sun, 24 May 2015 18:05:00 +0200</pubDate>
-				<link>http://dev.deftcode.ninja/post/verbind-discover-fastly-a-remote-bind-version/</link>
-				<guid isPermaLink="true">http://dev.deftcode.ninja/post/verbind-discover-fastly-a-remote-bind-version/</guid>
+				<link>http://deftcode.ninja/post/verbind-discover-fastly-a-remote-bind-version/</link>
+				<guid isPermaLink="true">http://deftcode.ninja/post/verbind-discover-fastly-a-remote-bind-version/</guid>
 				
 				
 				<category>security</category>
@@ -218,8 +218,8 @@ The architecture is based on the famous pattern MVC (Model, View, Control) and a
 &lt;/span&gt;&lt;/p&gt;
 </description>
 				<pubDate>Sun, 24 May 2015 17:30:00 +0200</pubDate>
-				<link>http://dev.deftcode.ninja/post/verbena-lightweight-security-framework/</link>
-				<guid isPermaLink="true">http://dev.deftcode.ninja/post/verbena-lightweight-security-framework/</guid>
+				<link>http://deftcode.ninja/post/verbena-lightweight-security-framework/</link>
+				<guid isPermaLink="true">http://deftcode.ninja/post/verbena-lightweight-security-framework/</guid>
 				
 				
 				<category>security</category>
@@ -904,8 +904,8 @@ vsaudit &amp;gt; q
 &lt;/span&gt;&lt;/p&gt;
 </description>
 				<pubDate>Mon, 11 May 2015 22:50:00 +0200</pubDate>
-				<link>http://dev.deftcode.ninja/post/vsaudit-voip-security-audit-framework/</link>
-				<guid isPermaLink="true">http://dev.deftcode.ninja/post/vsaudit-voip-security-audit-framework/</guid>
+				<link>http://deftcode.ninja/post/vsaudit-voip-security-audit-framework/</link>
+				<guid isPermaLink="true">http://deftcode.ninja/post/vsaudit-voip-security-audit-framework/</guid>
 				
 				
 				<category>security</category>
@@ -979,8 +979,8 @@ vsaudit &amp;gt; q
 &lt;p&gt;Thanks to Google Security Team for the &lt;a href=&quot;http://www.google.com/about/appsecurity/hall-of-fame/reward/&quot; title=&quot;Google Hall Of Fame - Federico Fazzi&quot;&gt;Google Hall Of Fame&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Sun, 09 Nov 2014 01:43:08 +0100</pubDate>
-				<link>http://dev.deftcode.ninja/post/stored-xss-in-google-shopping-express-through-wallet/</link>
-				<guid isPermaLink="true">http://dev.deftcode.ninja/post/stored-xss-in-google-shopping-express-through-wallet/</guid>
+				<link>http://deftcode.ninja/post/stored-xss-in-google-shopping-express-through-wallet/</link>
+				<guid isPermaLink="true">http://deftcode.ninja/post/stored-xss-in-google-shopping-express-through-wallet/</guid>
 				
 				
 				<category>responsible-disclosure</category>
@@ -1091,8 +1091,8 @@ In addition, the website &lt;strong&gt;Addthis.com is devoid largely&lt;/strong&
 &lt;/ul&gt;
 </description>
 				<pubDate>Sat, 11 Oct 2014 12:04:22 +0200</pubDate>
-				<link>http://dev.deftcode.ninja/post/how-im-able-to-take-control-of-any-addthis-com-account/</link>
-				<guid isPermaLink="true">http://dev.deftcode.ninja/post/how-im-able-to-take-control-of-any-addthis-com-account/</guid>
+				<link>http://deftcode.ninja/post/how-im-able-to-take-control-of-any-addthis-com-account/</link>
+				<guid isPermaLink="true">http://deftcode.ninja/post/how-im-able-to-take-control-of-any-addthis-com-account/</guid>
 				
 				
 				<category>responsible-disclosure</category>
@@ -1633,8 +1633,8 @@ In addition, the website &lt;strong&gt;Addthis.com is devoid largely&lt;/strong&
 
 </description>
 				<pubDate>Wed, 08 Oct 2014 02:27:33 +0200</pubDate>
-				<link>http://dev.deftcode.ninja/post/non-alphanumeric-javascript-coding/</link>
-				<guid isPermaLink="true">http://dev.deftcode.ninja/post/non-alphanumeric-javascript-coding/</guid>
+				<link>http://deftcode.ninja/post/non-alphanumeric-javascript-coding/</link>
+				<guid isPermaLink="true">http://deftcode.ninja/post/non-alphanumeric-javascript-coding/</guid>
 				
 				
 				<category>coding</category>
@@ -1701,8 +1701,8 @@ where &lt;strong&gt;XX&lt;/strong&gt; = &lt;code&gt;id of created portfolio&lt;/
 &lt;p&gt;Thanks Yahoo! Security Team for the add to &lt;a href=&quot;https://hackerone.com/yahoo/thanks&quot; title=&quot;Yahoo! Wall Of Fame - eurialo&quot;&gt;Wall Of Fame&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Thu, 02 Oct 2014 22:04:21 +0200</pubDate>
-				<link>http://dev.deftcode.ninja/post/yahoo-finance-cross-site-scripting/</link>
-				<guid isPermaLink="true">http://dev.deftcode.ninja/post/yahoo-finance-cross-site-scripting/</guid>
+				<link>http://deftcode.ninja/post/yahoo-finance-cross-site-scripting/</link>
+				<guid isPermaLink="true">http://deftcode.ninja/post/yahoo-finance-cross-site-scripting/</guid>
 				
 				
 				<category>responsible-disclosure</category>
@@ -1764,8 +1764,8 @@ where &lt;strong&gt;XX&lt;/strong&gt; = &lt;code&gt;id of created portfolio&lt;/
 
 </description>
 				<pubDate>Tue, 10 Jun 2014 14:32:18 +0200</pubDate>
-				<link>http://dev.deftcode.ninja/post/prestashop-dom-based-xss/</link>
-				<guid isPermaLink="true">http://dev.deftcode.ninja/post/prestashop-dom-based-xss/</guid>
+				<link>http://deftcode.ninja/post/prestashop-dom-based-xss/</link>
+				<guid isPermaLink="true">http://deftcode.ninja/post/prestashop-dom-based-xss/</guid>
 				
 				
 				<category>security</category>
