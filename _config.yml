@@ -7,7 +7,6 @@ email: eurialo@deftcode.ninja
 description: security.. coding / beer / coffee
 baseurl: ""
 url: "http://deftcode.ninja"
-url: "http://dev.deftcode.ninja"
 
 github_username:  eurialo
 github_url: "https://github.com/eurialo"
