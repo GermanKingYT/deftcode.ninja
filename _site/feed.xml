@@ -5,8 +5,8 @@
 		<description>security.. coding / beer / coffee</description>
 		<link>http://deftcode.ninja/</link>
 		<atom:link href="http://deftcode.ninja/feed.xml" rel="self" type="application/rss+xml" />
-		<pubDate>Sat, 26 Sep 2015 13:57:52 +0200</pubDate>
-		<lastBuildDate>Sat, 26 Sep 2015 13:57:52 +0200</lastBuildDate>
+		<pubDate>Sat, 26 Sep 2015 14:04:22 +0200</pubDate>
+		<lastBuildDate>Sat, 26 Sep 2015 14:04:22 +0200</lastBuildDate>
 		<generator>Jekyll v2.4.0</generator>
 		
 			<item>
@@ -1627,7 +1627,7 @@ where &lt;strong&gt;XX&lt;/strong&gt; = &lt;code&gt;id of created portfolio&lt;/
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;28/08/2014&lt;/strong&gt; – Report to Yahoo! Security Team through &lt;a href=&quot;https://hackerone.com/,&quot; title=&quot;Hackerone&quot;&gt;Hackerone.com&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;29/09/2014&lt;/strong&gt; – Received a response from Yahoo&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;01/10/2014&lt;/strong&gt; – Reply from Yahoo! Security Team that informs me that the bug was fixed&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;01/10/2014&lt;/strong&gt; – Reply from Yahoo! Security Team that informs me that the bug was fixed and reward me with $600&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;07/10/2014&lt;/strong&gt; – Public disclosure&lt;/li&gt;
 &lt;/ul&gt;
 

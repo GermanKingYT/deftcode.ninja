@@ -44,7 +44,7 @@ where **XX** = `id of created portfolio`
 
 * **28/08/2014** – Report to Yahoo! Security Team through [Hackerone.com](https://hackerone.com/, "Hackerone")
 * **29/09/2014** – Received a response from Yahoo
-* **01/10/2014** – Reply from Yahoo! Security Team that informs me that the bug was fixed
+* **01/10/2014** – Reply from Yahoo! Security Team that informs me that the bug was fixed and reward me with $600
 * **07/10/2014** – Public disclosure
 
 ### Acknowledgement
