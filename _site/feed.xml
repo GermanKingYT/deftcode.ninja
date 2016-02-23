@@ -5,9 +5,9 @@
 		<description>security.. coding / beer / coffee</description>
 		<link>http://deftcode.ninja/</link>
 		<atom:link href="http://deftcode.ninja/feed.xml" rel="self" type="application/rss+xml" />
-		<pubDate>Sat, 26 Sep 2015 14:06:18 +0200</pubDate>
-		<lastBuildDate>Sat, 26 Sep 2015 14:06:18 +0200</lastBuildDate>
-		<generator>Jekyll v2.4.0</generator>
+		<pubDate>Tue, 23 Feb 2016 23:56:04 +0100</pubDate>
+		<lastBuildDate>Tue, 23 Feb 2016 23:56:04 +0100</lastBuildDate>
+		<generator>Jekyll v2.5.3</generator>
 		
 			<item>
 				<title>CVE-2015-5460 – Snorby – 2.6.2 - Stored Cross-site Scripting</title>
@@ -176,7 +176,7 @@ the requireds gem dependencies through the Gemfile.&lt;/p&gt;
 
 &lt;p&gt;Download directly from the &lt;a href=&quot;http://bundler.io/&quot; title=&quot;Bundler&quot;&gt;Bundler&lt;/a&gt; website.&lt;/p&gt;
 
-&lt;p&gt;Or install with ‘&lt;strong&gt;gem&lt;/strong&gt;’ (ruby package manager) with:&lt;/p&gt;
+&lt;p&gt;Or install with ‘&lt;strong&gt;gem&lt;/strong&gt;’ (ruby package manager) with: &lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;deftcode ~ &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install bundler&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
@@ -578,7 +578,7 @@ separated by the &lt;strong&gt;separator&lt;/strong&gt; &lt;code&gt;:~&lt;/code&
 
 &lt;p&gt;&lt;strong&gt;Intercept&lt;/strong&gt; the &lt;strong&gt;sip md5 challenge&lt;/strong&gt; response &lt;strong&gt;hash&lt;/strong&gt; (&lt;strong&gt;WWW-Authenticate&lt;/strong&gt;):&lt;/p&gt;
 
-&lt;p&gt;You can try to intercept the md5 challenge during the sip handshake authentication.&lt;/p&gt;
+&lt;p&gt;You can try to intercept the md5 challenge during the sip handshake authentication. &lt;/p&gt;
 
 &lt;p&gt;Here is how handshake was performed:&lt;/p&gt;
 
@@ -942,12 +942,12 @@ vsaudit &amp;gt; q
 &lt;h3 id=&quot;proof-of-concept&quot;&gt;Proof of Concept:&lt;/h3&gt;
 
 &lt;p&gt;User_X = &lt;strong&gt;ra-5438e922313abc3a&lt;/strong&gt; Attacker&lt;br /&gt;
-User_Y = &lt;strong&gt;ra-538ce0c960e04da4&lt;/strong&gt; Victim&lt;/p&gt;
+User_Y = &lt;strong&gt;ra-538ce0c960e04da4&lt;/strong&gt; Victim  &lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;ra-XXXXXXXXXXXXXXXX reference to User ProfileId&lt;/code&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;User_X&lt;/strong&gt; visit the website of &lt;strong&gt;User_Y&lt;/strong&gt; that use &lt;strong&gt;Addthis plugin&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;User_X&lt;/strong&gt; visit the website of &lt;strong&gt;User_Y&lt;/strong&gt; that use &lt;strong&gt;Addthis plugin&lt;/strong&gt;  &lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;User_X&lt;/strong&gt; inspect the page source code and search for profileid string &lt;strong&gt;ra-538ce0c960e04da4&lt;/strong&gt; of &lt;strong&gt;User_Y&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;User_X login&lt;/strong&gt; into his Addthis.com account (&lt;strong&gt;ra-5438e922313abc3a&lt;/strong&gt; was assigned to &lt;strong&gt;User_X&lt;/strong&gt;)&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;User_X&lt;/strong&gt; make a &lt;strong&gt;POST Request&lt;/strong&gt; to:  &lt;strong&gt;&lt;a href=&quot;https://www.addthis.com/meta-data/boost-create-widget&quot; title=&quot;AddThis - boost-create-widget&quot; target=&quot;_blank&quot;&gt;https://www.addthis.com/meta-data/boost-create-widget&lt;/a&gt;&lt;/strong&gt; &lt;br /&gt;
