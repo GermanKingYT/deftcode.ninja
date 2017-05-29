@@ -52,6 +52,10 @@ After make the changes run the following **bundle** command to *build* the stati
 
 Continue to **Start using template**..
 
+Important
+---------
+Don't forget to remove the Google Analytics script from **_includes/head.html**!
+
 Links
 -----
 
