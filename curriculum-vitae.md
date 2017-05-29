@@ -9,11 +9,23 @@ permalink: curriculum-vitae/
 <div class="explain-alt">
 	<div class="what-container">
 		<div class="what-date">
-			Mar – 2015<br>
+			May – 2017<br>
 			– current
 		</div>
 		<div class="what-box">
-			<div class="what"><span class="progress">CURRENT</span> Security Consultant – Penetration Tester</div>
+			<div class="what"><span class="progress">CURRENT</span> Senior Security Consultant</div>
+			<div class="what-where">Minded Security S.r.l. – <a href="https://www.mindedsecurity.com" title="Minded Security S.r.l" target="_blank">mindedsecurity.com</a></div>
+			<div class="what-description boxed-xs">Currently performs penetration testing and source code analysis for multiple kind of applications for several companies included the financial and non-financial sectors.</div>
+		</div>
+	</div>
+	
+	<div class="what-container">
+		<div class="what-date">
+			Mar – 2015<br>
+			Apr – 2017
+		</div>
+		<div class="what-box">
+			<div class="what">IT Security Consultant – Penetration Tester</div>
 			<div class="what-where">Sanvil S.r.l. – <a href="http://sanvil.net" title="Sanvil S.r.l" target="_blank">sanvil.net</a></div>
 			<div class="what-description boxed-xs">Security consultant and researcher for external companies. <br>Penetration tester and security breaker guy.</div>
 		</div>
@@ -37,7 +49,7 @@ permalink: curriculum-vitae/
 			Mar – 2015
 		</div>
 		<div class="what-box">
-			<div class="what">Analyst, Software Developer</div>
+			<div class="what">Analyst, Software Developer – Security Managements</div>
 			<div class="what-where">Mentefredda S.r.l. – <a href="http://www.mentefredda.it" title="Mentefredda S.r.l" target="_blank">mentefredda.it</a></div>
 			<div class="what-description boxed-xs">Developer of a proprietary DMS named Zillioon for Hotel management.</div>
 		</div>
@@ -163,12 +175,12 @@ permalink: curriculum-vitae/
 			<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
 		</div>
 		<div>
-			<div class="square-dark"></div><div class="square-dark"></div><div class="square"></div>
-			<div class="square"></div><div class="square"></div><div class="square-nil"></div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-dark"></div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square-nil"></div>
 		</div>
 		<div>
-			<div class="square-light"></div><div class="square-light"></div><div class="square-light"></div>
-			<div class="square-light"></div><div class="square-light"></div><div class="square-nil"></div>
+			<div class="square-dark"></div><div class="square-dark"></div><div class="square"></div>
+			<div class="square"></div><div class="square"></div><div class="square-nil"></div>
 		</div>
 	</div>
 	<div class="endorsement-container">

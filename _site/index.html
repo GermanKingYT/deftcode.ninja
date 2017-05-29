@@ -84,7 +84,7 @@
 
 <h3 id="vulnerability">Vulnerability</h3>
 
-<p><strong>CVSS Score</strong>: 3.5 (<a href="https://nvd.nist.gov/cvss.cfm?calculator&amp;version=2&amp;vector=(AV:N/AC:M/Au:S/C:N/I:P/A:N)" title="CVSS v2 Vector (AV:N/AC:M/Au:S/C:N/I:P/A:N)" target="_blank">AV:N/AC:M/Au:S/C:N/I:P/A:N</a>)</p>
+<p><strong>CVSS Score</strong>: 4.3 (<a href="https://nvd.nist.gov/cvss.cfm?calculator&amp;version=2&amp;vector=(AV:N/AC:M/Au:N/C:N/I:P/A:N)" title="CVSS v2 Vector (AV:N/AC:M/Au:N/C:N/I:P/A:N)" target="_blank">AV:N/AC:M/Au:N/C:N/I:P/A:N</a>)</p>
 
 <p>The <code>XSS vector</code> is triggered in the <strong>snorby/app/views/events/_menu.html.erb</strong> page by the <strong>event/menu</strong>:</p>
 
@@ -96,7 +96,42 @@
     <span class="err">&lt;</span>% end %&gt;
 <span class="err">&lt;</span>% end %&gt;</code></pre></div>
 
-<!--
+<h3 id="mitigation">Mitigation</h3>
+
+<p>A simple <code>XSS mitigation</code> on rails could be the usage of the <strong>sanitize</strong>, for example the code below filters the xss vector by removing the onerror attribute from the image tag:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="err">&lt;</span>% @classifications.each do |cls| %
+    <span class="err">&lt;</span>% if cls.locked <span class="err">&amp;&amp;</span> cls.hotkey %&gt;
+        <span class="err">&lt;</span>%= drop_down_item &quot;#{sanitize cls.name}<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&#39;shortcut&#39;</span><span class="nt">&gt;</span>#{cls.shortcut}<span class="nt">&lt;/span&gt;</span>&quot;, &#39;#&#39;, nil, { :class =&gt; &#39;classification&#39;, :&quot;data-classification-id&quot; =&gt; cls.id.to_i } %&gt;
+    <span class="err">&lt;</span>% else %&gt;
+        <span class="err">&lt;</span>%= drop_down_item &quot;#{sanitize cls.name}&quot;, &#39;#&#39;, nil, { :class =&gt; &#39;classification&#39;, :&quot;data-classification-id&quot; =&gt; cls.id.to_i } %&gt;
+    <span class="err">&lt;</span>% end %&gt;
+<span class="err">&lt;</span>% end %&gt;</code></pre></div>
+
+<h3 id="solution">Solution</h3>
+
+<p><strong>Update</strong> to the <strong>latest</strong> version on <a href="https://github.com/Snorby/snorby" title="GitHub - Snorby" target="_blank">GitHub</a>.</p>
+
+<h3 id="disclosure">Disclosure:</h3>
+
+<ul>
+  <li><strong>30-06-2015</strong> – Vendor notification (<a href="https://github.com/Snorby/snorby/issues/377" title="GitHub Issue-377" target="_blank">GitHub Issue-377</a>)</li>
+  <li><strong>30-06-2015</strong> – CVE id requested</li>
+  <li><strong>01-07-2015</strong> – Vendor acknowledge</li>
+  <li><strong>01-07-2015</strong> – Vendor pushed a fix (commit-id: <a href="https://github.com/Snorby/snorby/commit/89d7cbcd3697c8a842f1a61b99e9a78f295798fb" title="GitHub commit-id: 89d7cbcd3697c8a842f1a61b99e9a78f295798fb" target="_blank">89d7cbcd3697c8a842f1a61b99e9a78f295798fb</a>)</li>
+  <li><strong>09-07-2015</strong> – CVE id assigned (<a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5460" title="CVE-2015-5460" target="_blank">CVE-2015-5460</a>)</li>
+  <li><strong>15-07-2015</strong> – Public disclosure</li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5460" title="CVE-2015-5460">http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5460</a></li>
+  <li><a href="http://seclists.org/fulldisclosure/2015/Jul/15" title="FullDisclosure">http://seclists.org/fulldisclosure/2015/Jul/15</a></li>
+  <li><a href="https://github.com/Snorby/snorby/issues/377" title="GitHub Issue-377">https://github.com/Snorby/snorby/issues/377</a></li>
+</ul>
+
+
 
 
 -->
@@ -350,7 +385,7 @@
 
 		</section>
 		<footer>
-	<p><small>2016 – <b><a href="http://en.wikipedia.org/wiki/MIT_License" title="Wikipedia.org - MIT License" target="_blank">MIT License</a></b></small></p>
+	<p><small>2017 – <b><a href="http://en.wikipedia.org/wiki/MIT_License" title="Wikipedia.org - MIT License" target="_blank">MIT License</a></b></small></p>
 </footer>
 <script src="/assets/app-cfd2668a2a4934bd07f418c9af7461f6.js"></script>
 	</div>

