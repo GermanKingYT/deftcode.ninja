@@ -673,6 +673,6 @@ Example:
 <p>If you want contribute to the vsaudit project you can start by fork the project in the github repository.</p>
 
 <span id="sources-list">
-[View on GitHub](https://github.com/sanvil/vsaudit/ "GitHub vsaudit")
-[Direct Download](https://github.com/sanvil/vsaudit/archive/master.zip "Download vsaudit")
+[View on GitHub](https://github.com/eurialo/vsaudit/ "GitHub vsaudit")
+[Direct Download](https://github.com/eurialo/vsaudit/archive/master.zip "Download vsaudit")
 </span>
